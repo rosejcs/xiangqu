@@ -1,0 +1,184 @@
+/*
+ * @Author: jcs 
+ * @Date: 2019-01-24 19:50:52 
+ * @Last Modified by: Jeecs
+ * @Last Modified time: 2019-01-25 15:25:51
+ */
+
+$normal_fontSize: 12px;
+$my_gray: #aeaeae;
+$my_white: #fafafa;
+
+@import "size";
+
+.small_size {
+  font-size: 0.5rem;
+}
+
+.my_gray {
+  color: $my_gray;
+}
+
+
+/* 具体样式 */
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: $normal_fontSize;
+  background-image: url("../img/brickwall.png");
+
+  .container {
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+    .login_logo {
+      width: 100%;
+      height: 98px;
+      a {
+        display: inline-block;
+        height: 100%;
+        line-height: 98px;
+        margin-left: 50px;
+      }
+    }
+    .wrapper1 {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.75rem;
+      .login_pic {
+        width:550px;
+        min-width: 550px;
+        img {
+          height:100%;
+        }
+      }
+      .user_msg {
+        width: 390px;
+        height: 450px;
+        min-width: 390px;
+        border: 1px solid $my_gray;
+        background-color: $my_white;
+        .wrapper2 {
+          position: relative;
+          width: 348px;
+          height: 450px;
+          padding: 0 22px;
+          h2 {
+            text-align: center;
+            padding: 1.75rem 0;
+            font-size: 16px;
+            border-bottom: 1px solid $my_gray;
+            margin-bottom: 1.75rem;
+          }
+          ul.btn {
+            width: 348px;
+            height: 212px;
+            margin-top: 3rem;
+            li {
+              width: 348px;
+              height: 44px;
+              border: 1px solid $my_gray;
+              display: flex;
+              justify-content: space-between;
+              border-radius: 6px 6px;
+              margin-bottom: 0.50rem;
+              margin-top: 0.25rem; 
+              overflow: hidden;
+              .userlogin {
+                width: 100%;
+                height: 100%;
+                background-color: #333;
+                color: $my_white;
+                cursor: pointer;
+              }
+              .userlogin:hover {
+                background-color: #000;
+              }
+              
+              span {
+                flex: 1;
+                height: 44px;
+                line-height: 44px;
+                text-align: center;
+                color: $my_gray;
+              }
+              input {
+                flex: 9;
+                height: 41px;
+                border: none;
+                outline: none;
+                padding-left: 1rem;
+                font-size: 1.25rem;
+              }
+            }
+            li.loginbtn {
+              margin-top: 50px;
+            }
+          }
+          a.forget {
+            float: right;
+            position: relative;
+            top: -100px;
+          }
+          .otherway {
+            position: relative;
+            border-top: 1px solid $my_gray;
+            margin-top: 17px;
+            .otherports {
+              padding-left: 103px;
+              a {
+                float: left;
+                width: 36px;
+                height: 36px;
+                overflow: hidden;
+                margin-top: 2rem;
+              }
+              a + a {
+                margin-left: 1.75rem;
+              }
+              a:nth-of-type(2) img {
+                position: relative;
+                right: 52px;
+              }
+              a:nth-of-type(3) img {
+                position: relative;
+                right: 105px;
+              }
+            }
+            .gotoReg {
+              position: absolute;
+              bottom: -100px;
+              left: 114px;
+            }
+          }
+        }
+        .wrapper2::before {
+          content: '使用想去账号登录';
+          position: absolute;
+          top: 55px;
+          left: 144px;
+          width: 110px;
+          font-size: 10px;
+          color: $my_gray;
+          background-color: $my_white;
+          text-align: center;
+        }
+        .wrapper2::after {
+          content: '使用社交账号登录';
+          position: absolute;
+          bottom: 114px;
+          left: 144px;
+          width: 110px;
+          font-size: 10px;
+          color: $my_gray;
+          background-color: $my_white;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

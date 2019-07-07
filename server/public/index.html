@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="keywords" content="购物 衣服 女装 shop shopping xiangqu 想去 wg" />
+  <meta name="description" content="想去,买得起的好设计" />
+  <title>想去_wg_index</title>
+  <link rel="stylesheet" href="./lib/fonts/font_qntbk/iconfont.css" />
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <!-- js部分 -->
+  <script src="./js/jquery-3.3.1.js"></script>
+  <script src="./js/ajax.js"></script>
+  <script src="./js/queryUser.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+  <script src="./js/carousel.js"></script>
+</head>
+
+<body>
+  <!-- #mHeader头部通用版块 -->
+  <header id="mHeader">
+    <div class="topNavbar">
+      <!-- topNavbar顶部导航栏 ( 左侧logo返回首页链接部分 以及 右侧用户登录+注册+设计师入驻+下载App部分 )-->
+      <div class="wrap clearfix">
+        <!-- leftLogo (左侧 logo首页链接 部分)-->
+        <div class="leftLogo">
+          <a href="index.html" class="leftLogoLink"><img src="./img/pc_logo2.jpg" alt="首页" /></a>
+        </div>
+        <!-- rightUser (右侧用户 登录+注册+设计师入驻+下载App 部分)-->
+        <div class="rightUser">
+          <ul class="loginAndReg">
+            <li class="loginReg">
+              <!-- 未登录 -->
+              <div class="unlog">
+                <a href="javascript:;" class="login">登录</a>
+                <a href="javascript:;" class="reg">注册</a>
+              </div>
+              <!-- 已登录 -->
+              <div class="logged">
+                <div class="userWrap">
+                  <a href="javascript:;" class="user">
+                    <span class="nameOrPhone">15812345600</span>
+                    <span><img src="./img/icon/dropdown.png"></span>
+                  </a>
+                  <div class="uconfig clearfix">
+                    <p>
+                      <a href="javascript:;">我的订单</a>
+                    </p>
+                    <p>
+                      <a href="javascript:;">个人设置</a>
+                    </p>
+                    <p>
+                      <a href="javascript:;">退出</a>
+                    </p>
+
+                  </div>
+                </div>
+                <a href="javascript:;" class="shopCart">
+                  购物车
+                  <span class="counts">10</span>
+                </a>
+                <a href="javacript:;" class="notice">
+                  通知
+                  <span class="counts"></span>
+                </a>
+
+              </div>
+            </li>
+            <li class="designerIn float-l"><a href="#">设计师入驻</a></li>
+            <li class="downloadApp float-l">
+              <a href="#">下载App<span class="iconfont icon-unfold"></span></a>
+              <div class="dBarCode">
+                <img src="./img/FrPIlipUd8Wgy0WwQ81zE3L-_gim" alt="" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- shopNavbar下部导航框 ( 左侧 shopNav 导航 以及 右侧 searchBar 搜索部分 )-->
+    <div class="shopNavbar">
+      <div class="wrap clearfix">
+        <!-- shopNav左侧商店菜单导航 -->
+        <ul class="shopNav">
+          <li class="active"><a href="#">首页</a></li>
+          <li><a href="#">逛</a></li>
+          <li><a href="#">设计师</a></li>
+          <li><a href="#">小站</a></li>
+        </ul>
+        <!-- searchBar 右侧搜索框 -->
+        <div class="searchBar">
+          <input type="text" class="searchItem" placeholder="搜索您感兴趣的品牌" />
+          <button type="submit" class="searchBtn">
+            <span class="iconfont icon-search"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /#mHeader头部通用版块 -->
+
+  <!-- #mContentIndex内容区块 -->
+  <div id="mContentIndex">
+    <!-- 1F -->
+    <!-- 轮播图 -->
+    <!-- priCarousel轮播图 -->
+    <div class="floor1">
+      <div class="wrap clearfix">
+        <div class="priCarousel">
+          <ul class="carouselItems">
+            <!--  <li>
+              <a href="#"> <img src="./img/pricarousel_5.jpg" alt="" /> </a>
+            </li>
+            <li>
+              <a href="#"> <img src="./img/pricarousel1.jpg" alt="" /> </a>
+            </li>
+            <li>
+              <a href="#"> <img src="./img/pricarousel2.jpg" alt="" /> </a>
+            </li>
+            <li>
+              <a href="#"> <img src="./img/pricarousel3.jpg" alt="" /> </a>
+            </li>
+            <li>
+              <a href="#"> <img src="./img/pricarousel4.jpg" alt="" /> </a>
+            </li>
+            <li>
+              <a href="#"> <img src="./img/pricarousel5.jpg" alt="" /> </a>
+            </li>
+            <li>
+              <a href="#"> <img src="./img/pricarousel_1.jpg" alt="" /> </a>
+            </li> -->
+          </ul>
+          <ul class="carouselIndicators">
+            <li class="active"><i></i></li>
+            <li><i></i></li>
+            <li><i></i></li>
+            <li><i></i></li>
+            <li><i></i></li>
+          </ul>
+          <div class="carouselControl prev">
+            <span class="iconfont icon-return"></span>
+          </div>
+          <div class="carouselControl next">
+            <span class="iconfont icon-enter"></span>
+          </div>
+        </div>
+        <div class="hotGood">
+          <!-- <a href="#"> <img src="./img/f1_hot_good_.jpg" alt="" /> </a> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 2F -->
+    <!-- 展示大家喜欢商品的轮播图 -->
+    <!-- 大家喜欢.likesBox -->
+    <div class="floor2 likesBox wrap clearfix">
+      <!-- 标题 -->
+      <div class="titleInfo">
+        <div class="title">
+          <h3>大 家 喜 欢</h3>
+          <span>快来看看今日最受网友推荐、好评不断的商品，喜欢就赶快带回家吧!</span>
+        </div>
+        <div class="likesOperate">
+          <a href="#" class="friendLikes">朋友动态</a>
+          <a href="#" class="likeAll">全部喜欢</a>
+        </div>
+      </div>
+      <!-- 背景横条虚点线版式 -->
+      <div class="backgroundBar clearfix">
+        <span class="dotted"> </span> <span class="lineDashed"></span>
+        <span class="nextLiker"><img src="./img/nextLiker.jpg" alt="" /></span>
+      </div>
+
+      <!-- userLike大家喜欢 -->
+      <div class="userLike clearfix">
+        <ul class="likesCarousel animate">
+          <!-- count1,2,3,4.四种排版 -->
+          <!-- <li class="likeCount1">
+            <div class="likerInfo">
+              <a href="#"><img src="./img/liker1.jpg" alt="" /></a>
+              <span class="likerName"> <span>稳得</span> </span>
+              <p class="likeMsg">
+                <span>6分钟前</span><span></span><span><span class="likesCountNum">1</span>个商品</span>
+              </p>
+            </div>
+            <ul class="likeGoods">
+              <li>
+                <a href="#"> <img src="./img/likePic1_1.jpg" alt="" /> </a>
+              </li>
+            </ul>
+          </li>
+          <li class="likeCount2">
+            <div class="likerInfo">
+              <a href="#"><img src="./img/liker2.jpg" alt="" /></a>
+              <span class="likerName">稳得一批11111</span>
+              <p class="likeMsg">
+                <span>6分钟前</span><span></span><span><span class="likesCountNum">2</span>个商品</span>
+              </p>
+            </div>
+            <ul class="likeGoods">
+              <li>
+                <a href="#"> <img src="./img/likePic2_1.jpg" alt="" /> </a>
+              </li>
+              <li>
+                <a href="#"> <img src="./img/likePic2_2.jpg" alt="" /> </a>
+              </li>
+            </ul>
+          </li>
+          <li class="likeCount3">
+            <div class="likerInfo">
+              <a href="#"><img src="./img/liker3.jpg" alt="" /></a>
+              <span class="likerName">稳得一批11111</span>
+              <p class="likeMsg">
+                <span>6分钟前</span><span></span><span><span class="likesCountNum">3</span>个商品</span>
+              </p>
+            </div>
+            <ul class="likeGoods">
+              <li>
+                <a href="#"> <img src="./img/likePic3_1.jpg" alt="" /> </a>
+              </li>
+              <li>
+                <a href="#"> <img src="./img/likePic3_2.jpg" alt="" /> </a>
+              </li>
+              <li>
+                <a href="#"> <img src="./img/likePic3_3.jpg" alt="" /> </a>
+              </li>
+            </ul>
+          </li>
+          <li class="likeCount4">
+            <div class="likerInfo">
+              <a href="#"><img src="./img/liker1.jpg" alt="" /></a>
+              <span class="likerName">稳得一批11111</span>
+              <p class="likeMsg">
+                <span>6分钟前</span><span></span><span><span class="likesCountNum">4</span>个商品</span>
+              </p>
+            </div>
+            <ul class="likeGoods">
+              <li>
+                <a href="#"> <img src="./img/likePic4_1.jpg" alt="" /> </a>
+              </li>
+              <li>
+                <a href="#"> <img src="./img/likePic4_2.jpg" alt="" /> </a>
+              </li>
+              <li>
+                <a href="#"> <img src="./img/likePic4_3.jpg" alt="" /> </a>
+              </li>
+              <li>
+                <a href="#"> <img src="./img/likePic4_4.jpg" alt="" /> </a>
+              </li>
+            </ul>
+          </li>
+          <li class="likeCount1">
+            <div class="likerInfo">
+              <a href="#"><img src="./img/liker1.jpg" alt="" /></a>
+              <span class="likerName">稳得</span>
+              <p class="likeMsg">
+                <span>6分钟前</span><span></span><span><span class="likesCountNum">1</span>个商品</span>
+              </p>
+            </div>
+            <ul class="likeGoods">
+              <li><a href="#"> </a></li>
+            </ul>
+          </li>
+          <li class="likeCount2">
+            <div class="likerInfo">
+              <a href="#"><img src="./img/liker2.jpg" alt="" /></a>
+              <span class="likerName">稳得一批11111</span>
+              <p class="likeMsg">
+                <span>6分钟前</span><span></span><span><span class="likesCountNum">2</span>个商品</span>
+              </p>
+            </div>
+            <ul class="likeGoods">
+              <li><a href="#"> </a></li>
+              <li><a href="#"> </a></li>
+            </ul>
+          </li>
+          <li class="likeCount3">
+            <div class="likerInfo">
+              <a href="#"><img src="./img/liker3.jpg" alt="" /></a>
+              <span class="likerName">稳得一批11111</span>
+              <p class="likeMsg">
+                <span>6分钟前</span><span></span><span><span class="likesCountNum">3</span>个商品</span>
+              </p>
+            </div>
+            <ul class="likeGoods">
+              <li><a href="#"> </a></li>
+              <li><a href="#"> </a></li>
+              <li><a href="#"> </a></li>
+            </ul>
+          </li>
+          <li class="likeCount4">
+            <div class="likerInfo">
+              <a href="#"><img src="./img/liker1.jpg" alt="" /></a>
+              <span class="likerName">稳得一批11111</span>
+              <p class="likeMsg">
+                <span>6分钟前</span><span></span><span><span class="likesCountNum">4</span>个商品</span>
+              </p>
+            </div>
+            <ul class="likeGoods">
+              <li><a href="#"> </a></li>
+              <li><a href="#"> </a></li>
+              <li><a href="#"> </a></li>
+              <li><a href="#"> </a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- 3F -->
+    <!-- designerBrand设计师品牌 -->
+    <div class="floor3 designerBrand wrap clearfix">
+      <!-- 标题 -->
+      <div class="titleInfo">
+        <div class="title">
+          <h3>设计师品牌</h3>
+          <span>
+            好的设计需要时间和匠心去打磨，贴合着设计师的手掌和心室使物品获得了温度。
+          </span>
+        </div>
+      </div>
+
+      <!-- 具体内容designerShow -->
+      <ul class="designerShow">
+        <!-- <li>
+          <div class="designerWrap">
+            <a href="javascript:;" class="designerPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="designerName"><span>BUTT原创设计师品牌 </span></a>
+          </div>
+        </li>
+        <li>
+          <div class="designerWrap">
+            <a href="javascript:;" class="designerPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="designerName">BUTT原创设计师品牌</a>
+          </div>
+        </li>
+        <li>
+          <div class="designerWrap">
+            <a href="javascript:;" class="designerPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="designerName">BUTT原创设计师品牌</a>
+          </div>
+        </li>
+        <li>
+          <div class="designerWrap">
+            <a href="javascript:;" class="designerPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="designerName">BUTT原创设计师品牌</a>
+          </div>
+        </li>
+        <li>
+          <div class="designerWrap">
+            <a href="javascript:;" class="designerPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="designerName">BUTT原创设计师品牌</a>
+          </div>
+        </li>
+        <li>
+          <div class="designerWrap">
+            <a href="javascript:;" class="designerPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="designerName">BUTT原创设计师品牌</a>
+          </div>
+        </li>
+        <li>
+          <div class="designerWrap">
+            <a href="javascript:;" class="designerPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="designerName">BUTT原创设计师品牌</a>
+          </div>
+        </li>
+        <li>
+          <div class="designerWrap">
+            <a href="javascript:;" class="designerPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="designerName">BUTT原创设计师品牌</a>
+          </div>
+        </li>
+        <li>
+          <div class="designerWrap">
+            <a href="javascript:;" class="designerPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="designerName">BUTT原创设计师品牌</a>
+          </div>
+        </li>
+        <li>
+          <div class="designerWrap">
+            <a href="javascript:;" class="designerPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="designerName">BUTT原创设计师品牌</a>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+
+    <!-- 4F -->
+    <!-- handjobArtist手工艺人 -->
+    <div class="floor4 handjobArtist wrap clearfix">
+      <!-- 标题 -->
+      <div class="titleInfo">
+        <div class="title">
+          <h3>手工艺人</h3>
+          <span>
+            手工艺人造物者是物的创造者，造物者是思想与智慧的源头，用智慧创造了万有，用思想控制着一切。
+          </span>
+        </div>
+      </div>
+
+      <!-- 具体内容handjobShow -->
+      <ul class="handjobShow">
+        <!-- <li>
+          <div class="handjobWrap">
+            <a href="javascript:;" class="handjobPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="handjobName">
+              <p>SDOKO十豆口</p>
+              <span class="careCount">5000</span>人关注<span class="linkIcon">
+                <img src="./img/pc_new_icon.png" alt="" />
+              </span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="handjobWrap">
+            <a href="javascript:;" class="handjobPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="handjobName">
+              <p>SDOKO十豆口</p>
+              <span class="careCount">5000</span>人关注<span class="linkIcon">
+                <img src="./img/pc_new_icon.png" alt="" />
+              </span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="handjobWrap">
+            <a href="javascript:;" class="handjobPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="handjobName">
+              <p>SDOKO十豆口</p>
+              <span class="careCount">5000</span>人关注<span class="linkIcon">
+                <img src="./img/pc_new_icon.png" alt="" />
+              </span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="handjobWrap">
+            <a href="javascript:;" class="handjobPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="handjobName">
+              <p>SDOKO十豆口</p>
+              <span class="careCount">5000</span>人关注<span class="linkIcon">
+                <img src="./img/pc_new_icon.png" alt="" />
+              </span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="handjobWrap">
+            <a href="javascript:;" class="handjobPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="handjobName">
+              <p>SDOKO十豆口</p>
+              <span class="careCount">5000</span>人关注<span class="linkIcon">
+                <img src="./img/pc_new_icon.png" alt="" />
+              </span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="handjobWrap">
+            <a href="javascript:;" class="handjobPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="handjobName">
+              <p>SDOKO十豆口</p>
+              <span class="careCount">5000</span>人关注<span class="linkIcon">
+                <img src="./img/pc_new_icon.png" alt="" />
+              </span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="handjobWrap">
+            <a href="javascript:;" class="handjobPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="handjobName">
+              <p>SDOKO十豆口</p>
+              <span class="careCount">5000</span>人关注<span class="linkIcon">
+                <img src="./img/pc_new_icon.png" alt="" />
+              </span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="handjobWrap">
+            <a href="javascript:;" class="handjobPic">
+              <img src="./img/designerShow1.jpg" alt="" />
+            </a>
+            <a href="javascript:;" class="handjobName">
+              <p>SDOKO十豆口</p>
+              <span class="careCount">5000</span>人关注<span class="linkIcon">
+                <img src="./img/pc_new_icon.png" alt="" />
+              </span>
+            </a>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+
+    <!-- 5F -->
+    <!-- todaySelect 今日精选和商品分类 -->
+    <div class="floor5 todaySelect wrap clearfix">
+      <!-- 上方标签 -->
+      <div class="tSelect clearfix">
+        <div class="tSelectParts">
+          <div class="todayBornSelect">
+            <a href="#">
+              <p>今天,<br />想去诞生了</p>
+              <p><i class="bornCount">6</i> <i>个</i></p>
+              <p>精选商品</p>
+            </a>
+          </div>
+          <div class="tBg">
+            <div class="bar"></div>
+            <span>这里熙熙攘攘，你，又会遇见谁创造的美好</span>
+          </div>
+          <ul class="selectCs">
+            <li class="active">
+              <a href="#"> 女人<br />广场 </a>
+            </li>
+            <li></li>
+            <li>
+              <a href="#"> 男人<br />广场 </a>
+            </li>
+            <li></li>
+            <li>
+              <a href="#"> 生活家<br />广场 </a>
+            </li>
+            <li></li>
+            <li>
+              <a href="#"> 独立设计师<br />作品 </a>
+            </li>
+            <li></li>
+            <li>
+              <a href="#"> 手工<br />作坊 </a>
+            </li>
+            <li></li>
+            <li>
+              <a href="#"> vintage<br />小铺</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tSelectCount">
+          <div class="tSelectTime">
+            <i class="years">2019</i>/ <i class="years">01</i>/
+            <i class="years">19</i>
+          </div>
+          <ul>
+            <li class="active"><i>954</i>人在逛</li>
+            <li><i>954</i>人在逛</li>
+            <li><i>954</i>人在逛</li>
+            <li><i>954</i>人在逛</li>
+            <li><i>954</i>人在逛</li>
+            <li><i>954</i>人在逛</li>
+          </ul>
+        </div>
+        <!-- <div class="tSelectCount"></div> -->
+      </div>
+      <!-- 下方商品展示 -->
+      <div class="tHot clearfix">
+        <!-- <div class="tHotParts"></div> -->
+        <ul class="tHotGoods">
+          <li class="hot">
+            <ul>
+              <li><i>HOT:</i></li>
+              <li><a href="javascript:;">日系</a></li>
+              <li><a href="javascript:;">通勤</a></li>
+              <li><a href="javascript:;">茧型</a></li>
+              <li><a href="javascript:;">文艺</a></li>
+              <li><a href="javascript:;">复古</a></li>
+              <li><a href="javascript:;">定制</a></li>
+              <li><a href="javascript:;">森女</a></li>
+              <li><a href="javascript:;">民族</a></li>
+              <li><a href="javascript:;">韩版</a></li>
+              <li><a href="javascript:;">欧美</a></li>
+            </ul>
+          </li>
+          <li>
+            <p class="title"><i></i><a href="#">上衣</a></p>
+            <ul>
+              <li><a href="#">针织衣</a></li>
+              <li><a href="#">卫衣</a></li>
+              <li><a href="#">T恤</a></li>
+              <li><a href="#">衬衫</a></li>
+              <li><a href="#">西装</a></li>
+              <li><a href="#">背心</a></li>
+              <li><a href="#">吊带</a></li>
+            </ul>
+          </li>
+          <li>
+            <p class="title"><i></i><a href="#">下装</a></p>
+            <ul>
+              <li><a href="#">牛仔裤</a></li>
+              <li><a href="#">休闲裤</a></li>
+              <li><a href="#">连衣裙</a></li>
+              <li><a href="#">短裙</a></li>
+              <li><a href="#">短裤</a></li>
+            </ul>
+          </li>
+          <li>
+            <p class="title"><i></i><a href="#">上衣</a></p>
+            <ul>
+              <li><a href="#">针织衣</a></li>
+              <li><a href="#">卫衣</a></li>
+              <li><a href="#">T恤</a></li>
+              <li><a href="#">衬衫</a></li>
+              <li><a href="#">西装</a></li>
+              <li><a href="#">背心</a></li>
+              <li><a href="#">吊带</a></li>
+            </ul>
+          </li>
+          <li>
+            <p class="title"><i></i><a href="#">上衣</a></p>
+            <ul>
+              <li><a href="#">针织衣</a></li>
+              <li><a href="#">卫衣</a></li>
+              <li><a href="#">T恤</a></li>
+              <li><a href="#">衬衫</a></li>
+              <li><a href="#">西装</a></li>
+              <li><a href="#">背心</a></li>
+              <li><a href="#">吊带</a></li>
+            </ul>
+          </li>
+          <li>
+            <p class="title"><i></i><a href="#">上衣</a></p>
+            <ul>
+              <li><a href="#">针织衣</a></li>
+              <li><a href="#">卫衣</a></li>
+              <li><a href="#">T恤</a></li>
+              <li><a href="#">衬衫</a></li>
+              <li><a href="#">西装</a></li>
+              <li><a href="#">背心</a></li>
+              <li><a href="#">吊带</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 6F -->
+    <!-- goodRecommend好物推荐 -->
+    <div class="floor6 goodRecommend wrap clearfix">
+      <!-- 标题 -->
+      <div class="titleInfo clearfix">
+        <div class="title">
+          <h3>好物推荐</h3>
+          <span>
+            快来看看今日最受网友推荐、好评不断的商品,喜欢就赶快带回家吧!
+          </span>
+        </div>
+      </div>
+
+      <!-- 轮播商品 -->
+      <div class="goodCarousel">
+        <!-- <ul class="carouselBox">
+          <li class="screen1">
+            <ul>
+              <li>
+                <a href="#">
+                  <p>礼盒</p>
+                  <img src="./img/secCarousel1.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>礼盒</p>
+                  <img src="./img/secCarousel1.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>礼盒</p>
+                  <img src="./img/secCarousel1.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>礼盒</p>
+                  <img src="./img/secCarousel1.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>礼盒</p>
+                  <img src="./img/secCarousel1.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>礼盒</p>
+                  <img src="./img/secCarousel1.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>礼盒</p>
+                  <img src="./img/secCarousel1.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>礼盒</p>
+                  <img src="./img/secCarousel1.jpg" alt="">
+                </a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="screen2">
+            <ul>
+              <li>
+                <a href="#">
+                  <p>礼盒</p>
+                  <img src="./img/secCarousel1.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>礼盒</p>
+                  <img src="./img/secCarousel1.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>礼盒</p>
+                  <img src="./img/secCarousel1.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>礼盒</p>
+                  <img src="./img/secCarousel1.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>礼盒</p>
+                  <img src="./img/secCarousel1.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>礼盒</p>
+                  <img src="./img/secCarousel1.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>礼盒</p>
+                  <img src="./img/secCarousel1.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>礼盒</p>
+                  <img src="./img/secCarousel1.jpg" alt="">
+                </a>
+              </li>
+
+            </ul>
+          </li>
+        </ul> -->
+        <div class="carouselControl prev">
+          <span class="iconfont icon-return"></span>
+        </div>
+        <div class="carouselControl next">
+          <span class="iconfont icon-enter"></span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 7F -->
+    <!-- guessuLike猜你喜欢 -->
+    <div class="floor7 guessuLike wrap clearfix">
+      <!-- 标题 -->
+      <div class="titleInfo clearfix">
+        <div class="title">
+          <h3>猜你喜欢</h3>
+        </div>
+      </div>
+      <!-- 商品展示 -->
+      <div class="uLikeShow">
+        <ul>
+          <!-- <li><a href="#">
+              <img src="./img/guessulike1.jpg" alt="">
+            </a></li>
+          <li><a href="#">
+              <img src="./img/guessulike2.jpg" alt="">
+            </a></li>
+          <li><a href="#">
+              <img src="./img/guessulike3.jpg" alt="">
+            </a></li>
+          <li><a href="#">
+              <img src="./img/guessulike4.jpg" alt="">
+            </a></li>
+          <li><a href="#">
+              <img src="./img/guessulike5.jpg" alt="">
+            </a></li>
+          <li><a href="#">
+              <img src="./img/guessulike6.jpg" alt="">
+            </a></li>
+          <li><a href="#">
+              <img src="./img/guessulike7.jpg" alt="">
+            </a></li> -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- 8F -->
+    <!-- otherPart商城其他 -->
+    <!-- 友好伙伴以及APP下载 -->
+    <div class="floor8 otherPart wrap clearfix">
+      <ul>
+        <li>
+          <p>设计师品牌入驻及商务合作</p>
+          <p>chuchu@xiangqu.com</p>
+          <p>在线申请(online application): <a href="#">立即申请</a> </p>
+        </li>
+        <li>
+          <p>
+            <a href="#"><i></i>微博关注</a>
+            <a href="#"><i></i>APP下载</a>
+          </p>
+          <img src="./img/sharedowm_40.jpg" alt="">
+        </li>
+        <li>
+          <p><span>CONTACT</span> us 联系我们</p>
+          <p>客服邮箱:kefu@ixiaopu.com</p>
+          <p>工作时间:09:30-18:00(周一至周五、节假日除外)</p>
+          <p>客服热线:400-960-0168</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- /#mContentIndex -->
+
+  <!-- #mFooter底部通用版块 -->
+  <footer id="mFooter">
+    <div class="wrap clearfix">
+      <!-- 1.say&author名人名言 -->
+      <div class="sayAuthor">
+        <!-- 1.1.say -->
+        <p class="say">
+          “决定设计哪个产品跟决定如何度过人生一样，最关键是看你的见解。”
+        </p>
+        <!-- 1.2.author -->
+        <p class="author">by <span> 米谷久美</span></p>
+      </div>
+
+      <!-- 2.copyright 版权声明,社区跳转 -->
+      <div class="copyright clearfix">
+        <!-- link左侧网站链接 -->
+        <div class="link">
+          <a href="#"><span class="sina"></span>新浪微博</a>
+          <a href="#"><span class="douban"></span>豆瓣小站</a>
+          <a href="#"><span class="renren"></span>人人小站</a>
+        </div>
+        <!-- copyWord中间版权声明 -->
+        <div class="copyWord">
+          <p>Copyright 2017 版权所有 xiangqu.com 浙ICP备12027496</p>
+        </div>
+
+        <!-- goShopLink -->
+        <div class="goShopLink">
+          <a href="#">热门精选</a> <a href="#">热门分类</a>
+        </div>
+      </div>
+
+      <!-- 3.friendLink 友情链接合作伙伴 -->
+      <div class="friendLink clearfix">
+        <ul class="aboutUs clearfix">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">用户帮助</a></li>
+          <li><a href="#">商务合作</a></li>
+        </ul>
+        <ul class="theLink">
+          <li>友情链接:</li>
+          <li><a href="#">想去网</a></li>
+          <li><a href="#">手机想去</a></li>
+          <li><a href="#">爱图购</a></li>
+          <li><a href="#">更多...</a></li>
+        </ul>
+      </div>
+
+      <!-- 4.工商编号和安全联盟 -->
+      <div class="versionNum clearfix">
+        <div class="verNum">
+          <a href="#">
+            <img src="./img/FinEALw7ifYIV2baxOAzDe1ctz1S" alt="" />
+            <span>浙公网安备 33010602001965号</span>
+          </a>
+        </div>
+        <div class="unionPic">
+          <a href="#"> <img src="./img/sm_83x30.png" alt="" /> </a>
+        </div>
+      </div>
+
+      <!-- 5.wantJoin入驻链接 -->
+      <div class="wantJoin float-r clearfix">
+        <a href="#"><img src="./img/xq_bottom_img.png" alt="" /></a>
+      </div>
+    </div>
+  </footer>
+  <!-- /#mFooter底部通用版块 -->
+
+  <!-- #theFixed固定跟随通用版块 -->
+  <!-- #slideNav 固定跟随的导航框(App下载二维码+商家入驻入口) -->
+  <div id="slideNav">
+    <div class="slideLogo clearfix"><a href="#"></a></div>
+    <p>想去App下载</p>
+    <div class="barCode"></div>
+  </div>
+  <!-- /#slideNav -->
+  <!-- .feedBack 固定位置的返回顶部按钮 -->
+  <div class="feedBack">
+    <div class="feedBackBtn"><a href="#"></a></div>
+    <a href="#" class="advice"></a>
+  </div>
+  <!-- /.feedBack -->
+
+  <!-- js部分 -->
+
+</body>
+
+</html>

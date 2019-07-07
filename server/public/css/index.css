@@ -1,0 +1,1007 @@
+@charset "UTF-8";
+.wrap {
+  width: 90%;
+  max-width: 980px;
+  min-width: 370px;
+  margin: 0 auto;
+  border: 1px solid goldenrod;
+  box-sizing: border-box; }
+
+/* #slideNav固定跟随的导航框 */
+/* #slideNav 固定跟随的导航框(App下载二维码+商家入驻入口) */
+#slideNav {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  width: 120px;
+  height: 238px;
+  background-color: #111; }
+  #slideNav::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: -23px;
+    right: 0px;
+    background: #fff url("../img/ico_common.png") no-repeat -204px -462px;
+    cursor: pointer; }
+  #slideNav .slideLogo {
+    width: 120px;
+    height: 86px;
+    background-image: url("../img/ruzhu_bottom.png"); }
+    #slideNav .slideLogo a {
+      float: left;
+      width: 108px;
+      height: 26px;
+      margin: 49px 0px 0px 6px; }
+  #slideNav p {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; }
+  #slideNav .barCode {
+    width: 110px;
+    height: 110px;
+    background: url("../img/qr.png") no-repeat;
+    margin: 5px 5px; }
+
+/* .feedBack固定跟随的返回顶部 */
+.feedBack {
+  position: fixed;
+  bottom: 280px;
+  left: 90%; }
+  .feedBack .feedBackBtn {
+    /* 默认hidden,滚动一定距离block */
+    display: block;
+    text-align: center;
+    margin-bottom: 8px; }
+    .feedBack .feedBackBtn a {
+      display: inline-block;
+      width: 28px;
+      height: 117px;
+      background-image: url("../img/gotop.gif");
+      background-position: left bottom; }
+      .feedBack .feedBackBtn a:hover {
+        background-image: url("../img/gotop_hover.gif"); }
+  .feedBack a.advice {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background-image: url("../img/advice.png");
+    background-position: -12px -11px; }
+    .feedBack a.advice:hover {
+      background-image: url("../img/advice-hover.png"); }
+
+/* 
+网页结构
+  body
+    #mHeader
+      .topNavbar
+      .shopNavbar
+    #mFooter
+    #slideNav
+    .feedBack
+    // 内容样式如下
+    #mContentIndex
+*/
+/* 1F */
+#mContentIndex {
+  width: 100%;
+  /* 
+    .floor2
+      .titleInfo
+      .userLike
+        ul.likesCarousel
+          li.likeCount1
+            div.likerInfo
+              a
+              p.likerName
+              p.likeMsg
+            ul.likeGoods
+  */
+  /* 设计师品牌 designerBrand */
+  /* 4F */ }
+  #mContentIndex .floor1 {
+    width: 100%;
+    background-color: #ddd; }
+    #mContentIndex .floor1 .wrap {
+      display: flex;
+      justify-content: space-between; }
+      #mContentIndex .floor1 .wrap .priCarousel {
+        flex: 15;
+        max-width: 770px;
+        max-height: 360px;
+        position: relative;
+        overflow: hidden; }
+        #mContentIndex .floor1 .wrap .priCarousel ul.carouselItems {
+          width: 700%;
+          float: left;
+          display: flex;
+          transform: translateX(-14.29%); }
+          #mContentIndex .floor1 .wrap .priCarousel ul.carouselItems li {
+            flex: 1;
+            float: left; }
+            #mContentIndex .floor1 .wrap .priCarousel ul.carouselItems li a img {
+              width: 100%;
+              vertical-align: top; }
+        #mContentIndex .floor1 .wrap .priCarousel .carouselIndicators {
+          position: absolute;
+          bottom: 10%;
+          left: 50%;
+          margin-left: -66px; }
+          #mContentIndex .floor1 .wrap .priCarousel .carouselIndicators li {
+            float: left; }
+            #mContentIndex .floor1 .wrap .priCarousel .carouselIndicators li + li {
+              margin-left: 8px; }
+            #mContentIndex .floor1 .wrap .priCarousel .carouselIndicators li.active i {
+              background-image: radial-gradient(30px, #fff, #cbcdcf 50%); }
+            #mContentIndex .floor1 .wrap .priCarousel .carouselIndicators li i {
+              display: block;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              background-color: #aaa;
+              cursor: pointer;
+              transition: all 0.2s linear; }
+              #mContentIndex .floor1 .wrap .priCarousel .carouselIndicators li i:hover {
+                box-shadow: 0 0 20px 1px #01d3f8 inset;
+                transform: scale(1.2); }
+        #mContentIndex .floor1 .wrap .priCarousel .carouselControl {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          margin-top: -32px; }
+          #mContentIndex .floor1 .wrap .priCarousel .carouselControl + div.carouselControl {
+            left: auto;
+            right: 0; }
+          #mContentIndex .floor1 .wrap .priCarousel .carouselControl span {
+            display: inline-block;
+            width: 64px;
+            height: 64px;
+            font-size: 64px;
+            color: #f1f1f1;
+            opacity: 0.7; }
+            #mContentIndex .floor1 .wrap .priCarousel .carouselControl span:hover {
+              text-shadow: -2px 2px 8px #f6f6dd;
+              cursor: pointer;
+              opacity: 1; }
+      #mContentIndex .floor1 .wrap .hotGood {
+        flex: 4;
+        max-width: 205px;
+        max-height: 360px;
+        overflow: hidden; }
+        #mContentIndex .floor1 .wrap .hotGood a img {
+          width: 100%;
+          vertical-align: top; }
+  #mContentIndex .floor2 {
+    position: relative;
+    padding-top: 2rem; }
+    #mContentIndex .floor2 .titleInfo {
+      padding-bottom: 1.7rem; }
+      #mContentIndex .floor2 .titleInfo .title {
+        float: left; }
+        #mContentIndex .floor2 .titleInfo .title h3 {
+          float: left;
+          padding: 0 0.25rem 0 0.5rem;
+          font-size: 1.05rem;
+          height: 1.2rem;
+          line-height: 1.2rem;
+          border-left: 6px solid #000;
+          color: #e77d9c;
+          box-sizing: border-box; }
+        #mContentIndex .floor2 .titleInfo .title span {
+          float: left;
+          font-size: 0.75rem;
+          line-height: 1.2rem;
+          color: #aaa; }
+      #mContentIndex .floor2 .titleInfo .likesOperate {
+        float: right;
+        padding-right: 2.25rem; }
+        #mContentIndex .floor2 .titleInfo .likesOperate .friendLikes,
+        #mContentIndex .floor2 .titleInfo .likesOperate .likeAll {
+          float: left;
+          color: #666; }
+          #mContentIndex .floor2 .titleInfo .likesOperate .friendLikes::before,
+          #mContentIndex .floor2 .titleInfo .likesOperate .likeAll::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #222;
+            border-radius: 50%;
+            margin: 4px 6px 1px; }
+        #mContentIndex .floor2 .titleInfo .likesOperate .friendLikes {
+          margin-right: 1rem; }
+    #mContentIndex .floor2 .backgroundBar {
+      position: absolute;
+      top: 58px;
+      left: 0px;
+      width: 95%;
+      padding: 1.5rem 0 0 1.5rem; }
+      #mContentIndex .floor2 .backgroundBar span.dotted {
+        float: left;
+        width: 11px;
+        height: 11px;
+        border: 3px solid #debca4;
+        border-radius: 50%;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin-top: 9px; }
+      #mContentIndex .floor2 .backgroundBar span.lineDashed {
+        float: left;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        height: 11px;
+        width: 68%;
+        background: url(../img/pink_dotted.png);
+        margin-top: 6px; }
+      #mContentIndex .floor2 .backgroundBar span.nextLiker {
+        float: left;
+        width: 22px;
+        height: 22px;
+        margin-left: 30px;
+        border: 3px solid #debca4;
+        border-radius: 50%;
+        overflow: hidden; }
+        #mContentIndex .floor2 .backgroundBar span.nextLiker img {
+          width: 100%; }
+    #mContentIndex .floor2 .userLike {
+      float: left;
+      width: 100%;
+      overflow: hidden;
+      padding-bottom: 1rem; }
+
+@keyframes autoPlay {
+  0% { }
+  25% {
+    transform: translateX(-978px); }
+  50% {
+    transform: translateX(-978px); }
+  75% {
+    transform: translateX(-1956px); }
+  100% {
+    transform: translateX(-1956px); } }
+      #mContentIndex .floor2 .userLike .animate {
+        animation: autoPlay 100s linear infinite; }
+      #mContentIndex .floor2 .userLike ul.likesCarousel {
+        margin-top: 1rem;
+        display: flex; }
+        #mContentIndex .floor2 .userLike ul.likesCarousel > li {
+          float: left;
+          margin-right: 40px; }
+          #mContentIndex .floor2 .userLike ul.likesCarousel > li .likerInfo {
+            text-align: center;
+            padding-bottom: 12px; }
+            #mContentIndex .floor2 .userLike ul.likesCarousel > li .likerInfo a {
+              display: inline-block;
+              width: 54px;
+              height: 54px;
+              border-radius: 50%;
+              overflow: hidden;
+              clear: both;
+              text-align: center; }
+              #mContentIndex .floor2 .userLike ul.likesCarousel > li .likerInfo a img {
+                text-align: center;
+                width: 54px; }
+            #mContentIndex .floor2 .userLike ul.likesCarousel > li .likerInfo .likerName {
+              display: block;
+              width: 100%;
+              height: 19px; }
+              #mContentIndex .floor2 .userLike ul.likesCarousel > li .likerInfo .likerName span {
+                border-radius: 30px;
+                background-color: #debca4;
+                display: inline-block;
+                width: 80px;
+                height: 19px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: no-wrap;
+                text-align: center; }
+            #mContentIndex .floor2 .userLike ul.likesCarousel > li .likerInfo .likeMsg {
+              padding: 0 4px; }
+              #mContentIndex .floor2 .userLike ul.likesCarousel > li .likerInfo .likeMsg span:nth-child(2) {
+                display: inline-block;
+                width: 17px;
+                height: 10px;
+                background: url("../img/peopleLike.png") no-repeat -58px -65px; }
+              #mContentIndex .floor2 .userLike ul.likesCarousel > li .likerInfo .likeMsg span:nth-child(3) {
+                color: #aaa; }
+          #mContentIndex .floor2 .userLike ul.likesCarousel > li ul.likeGoods li a {
+            float: left;
+            transition: all 500ms linear;
+            border: 1px solid #eee;
+            box-sizing: border-box; }
+            #mContentIndex .floor2 .userLike ul.likesCarousel > li ul.likeGoods li a:hover {
+              transform: scale(1.1);
+              box-shadow: 0px 0px 1px 0px #abc; }
+            #mContentIndex .floor2 .userLike ul.likesCarousel > li ul.likeGoods li a img {
+              width: 100%;
+              height: 100%; }
+        #mContentIndex .floor2 .userLike ul.likesCarousel > li.likeCount1 ul.likeGoods li a {
+          width: 220px;
+          height: 228px;
+          background: url("../img/likePic1_1.jpg") no-repeat center center/cover; }
+        #mContentIndex .floor2 .userLike ul.likesCarousel > li.likeCount2 ul.likeGoods li {
+          margin: 0 1rem; }
+          #mContentIndex .floor2 .userLike ul.likesCarousel > li.likeCount2 ul.likeGoods li a {
+            width: 110px;
+            height: 114px;
+            background: url("../img/likePic2_1.jpg") no-repeat center/cover; }
+        #mContentIndex .floor2 .userLike ul.likesCarousel > li.likeCount3 ul.likeGoods {
+          width: 330px; }
+          #mContentIndex .floor2 .userLike ul.likesCarousel > li.likeCount3 ul.likeGoods li {
+            float: left; }
+            #mContentIndex .floor2 .userLike ul.likesCarousel > li.likeCount3 ul.likeGoods li a {
+              width: 110px;
+              height: 114px;
+              background: url("../img/likePic1_1.jpg") no-repeat center center/cover; }
+          #mContentIndex .floor2 .userLike ul.likesCarousel > li.likeCount3 ul.likeGoods li:nth-child(1) a {
+            width: 220px;
+            height: 228px; }
+        #mContentIndex .floor2 .userLike ul.likesCarousel > li.likeCount4 ul.likeGoods {
+          width: 220px; }
+          #mContentIndex .floor2 .userLike ul.likesCarousel > li.likeCount4 ul.likeGoods li {
+            float: left; }
+            #mContentIndex .floor2 .userLike ul.likesCarousel > li.likeCount4 ul.likeGoods li a {
+              width: 110px;
+              height: 114px;
+              background: url("../img/likePic1_1.jpg") no-repeat center center/cover; }
+  #mContentIndex .floor3,
+  #mContentIndex .floor4 {
+    padding-top: 2rem; }
+    #mContentIndex .floor3 .titleInfo,
+    #mContentIndex .floor4 .titleInfo {
+      padding-bottom: 1.7rem; }
+      #mContentIndex .floor3 .titleInfo .title,
+      #mContentIndex .floor4 .titleInfo .title {
+        float: left; }
+        #mContentIndex .floor3 .titleInfo .title h3,
+        #mContentIndex .floor4 .titleInfo .title h3 {
+          float: left;
+          padding: 0 2rem 0 0.5rem;
+          font-size: 1.05rem;
+          height: 1.2rem;
+          line-height: 1.2rem;
+          border-left: 6px solid #000;
+          box-sizing: border-box; }
+        #mContentIndex .floor3 .titleInfo .title span,
+        #mContentIndex .floor4 .titleInfo .title span {
+          float: left;
+          font-size: 0.75rem;
+          line-height: 1.2rem;
+          color: #aaa; }
+  #mContentIndex .floor3 .designerShow {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    #mContentIndex .floor3 .designerShow li {
+      width: 170px;
+      height: 211px;
+      border: 1px solid #ccc;
+      margin: 0.42rem; }
+      #mContentIndex .floor3 .designerShow li .designerWrap {
+        float: left; }
+        #mContentIndex .floor3 .designerShow li .designerWrap .designerPic {
+          float: left;
+          width: 100%;
+          height: 182px; }
+          #mContentIndex .floor3 .designerShow li .designerWrap .designerPic img {
+            width: 100%;
+            vertical-align: top; }
+        #mContentIndex .floor3 .designerShow li .designerWrap .designerName {
+          float: left;
+          width: 170px;
+          height: 28px;
+          line-height: 28px;
+          font-weight: 600;
+          border-top: 1px solid #ccc;
+          background-color: #f3f3f3;
+          text-align: center;
+          padding: 0 1rem;
+          box-sizing: border-box;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+        #mContentIndex .floor3 .designerShow li .designerWrap:hover .designerName {
+          background-color: #ccc; }
+  #mContentIndex .floor4 ul.handjobShow {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    #mContentIndex .floor4 ul.handjobShow li {
+      width: 218px;
+      height: 218px;
+      border: 1px solid #ccc;
+      margin: 0.42rem; }
+      #mContentIndex .floor4 ul.handjobShow li div.handjobWrap {
+        float: left;
+        width: 100%;
+        height: 100%; }
+        #mContentIndex .floor4 ul.handjobShow li div.handjobWrap .handjobPic {
+          float: left;
+          width: 100%;
+          height: 182px;
+          overflow: hidden;
+          text-align: center; }
+          #mContentIndex .floor4 ul.handjobShow li div.handjobWrap .handjobPic img {
+            vertical-align: top;
+            width: 100%;
+            height: 100%; }
+        #mContentIndex .floor4 ul.handjobShow li div.handjobWrap .handjobName {
+          position: relative;
+          float: left;
+          width: 100%;
+          padding: 0 1rem;
+          box-sizing: border-box;
+          border-top: 1px solid #ccc;
+          background-color: #f3f3f3;
+          font-size: 0.5rem;
+          color: #aaa;
+          box-sizing: border-box; }
+          #mContentIndex .floor4 ul.handjobShow li div.handjobWrap .handjobName p {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #000;
+            width: 80%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+          #mContentIndex .floor4 ul.handjobShow li div.handjobWrap .handjobName .linkIcon {
+            position: absolute;
+            top: 8px;
+            right: 4px;
+            width: 21px;
+            height: 22px;
+            overflow: hidden;
+            border-radius: 50%; }
+            #mContentIndex .floor4 ul.handjobShow li div.handjobWrap .handjobName .linkIcon img {
+              position: relative;
+              top: -180px;
+              left: -3px; }
+        #mContentIndex .floor4 ul.handjobShow li div.handjobWrap:hover .handjobName {
+          background-color: #ccc; }
+  #mContentIndex .floor5 {
+    padding-top: 2rem; }
+    @media screen and (max-width: 1100px) {
+      #mContentIndex .floor5 .tSelect {
+        overflow: hidden;
+        overflow-x: scroll; } }
+    #mContentIndex .floor5 .tSelect {
+      width: 100%; }
+      #mContentIndex .floor5 .tSelect .tSelectParts {
+        width: 980px;
+        position: relative; }
+        #mContentIndex .floor5 .tSelect .tSelectParts .todayBornSelect {
+          float: left;
+          width: 100px;
+          height: 112px;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+          padding: 0.75rem;
+          background-color: #f8f8f8; }
+          #mContentIndex .floor5 .tSelect .tSelectParts .todayBornSelect p {
+            width: 80px;
+            color: #aaa; }
+            #mContentIndex .floor5 .tSelect .tSelectParts .todayBornSelect p i.bornCount {
+              font-size: 26px;
+              font-weight: 600;
+              padding: 0 1rem 0 1rem; }
+          #mContentIndex .floor5 .tSelect .tSelectParts .todayBornSelect p:nth-child(2) i.bornCount {
+            color: #111; }
+          #mContentIndex .floor5 .tSelect .tSelectParts .todayBornSelect:hover {
+            border-color: #444; }
+            #mContentIndex .floor5 .tSelect .tSelectParts .todayBornSelect:hover p i.bornCount {
+              color: lightseagreen; }
+        #mContentIndex .floor5 .tSelect .tSelectParts .tBg {
+          width: 80%;
+          position: absolute;
+          top: 0px;
+          right: 0px; }
+          #mContentIndex .floor5 .tSelect .tSelectParts .tBg div.bar {
+            width: 100%;
+            height: 6px;
+            background-color: #000; }
+          #mContentIndex .floor5 .tSelect .tSelectParts .tBg span {
+            position: absolute;
+            top: -5px;
+            left: 40px;
+            font-size: 14px;
+            color: #aaa;
+            background-color: #fff;
+            padding: 0 12px; }
+        @media screen and (max-width: 500px) {
+          #mContentIndex .floor5 .tSelect .tSelectParts .tBg {
+            width: 70%; }
+            #mContentIndex .floor5 .tSelect .tSelectParts .tBg span {
+              display: none; } }
+        #mContentIndex .floor5 .tSelect .tSelectParts ul.selectCs {
+          height: 112px;
+          float: left;
+          margin-left: 4rem; }
+          #mContentIndex .floor5 .tSelect .tSelectParts ul.selectCs li {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            text-align: center;
+            float: left;
+            margin-top: 20px;
+            margin-left: 8px; }
+            #mContentIndex .floor5 .tSelect .tSelectParts ul.selectCs li a {
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              margin-top: 18px; }
+          #mContentIndex .floor5 .tSelect .tSelectParts ul.selectCs li:nth-child(2n + 2) {
+            width: 40px;
+            height: 58px;
+            background: url("../img/homev2_icos.png") no-repeat 0px -231px;
+            margin-top: 30px; }
+          #mContentIndex .floor5 .tSelect .tSelectParts ul.selectCs li:nth-child(2n + 1):hover, #mContentIndex .floor5 .tSelect .tSelectParts ul.selectCs li:nth-child(2n + 1).active {
+            background-color: #333; }
+            #mContentIndex .floor5 .tSelect .tSelectParts ul.selectCs li:nth-child(2n + 1):hover a, #mContentIndex .floor5 .tSelect .tSelectParts ul.selectCs li:nth-child(2n + 1).active a {
+              color: #f1f1f1; }
+      #mContentIndex .floor5 .tSelect .tSelectCount {
+        float: left;
+        width: 980px;
+        height: 36px;
+        border-top: 2px solid #000;
+        background-color: #efefef; }
+        #mContentIndex .floor5 .tSelect .tSelectCount .tSelectTime {
+          float: left;
+          width: 115px;
+          height: 27px;
+          background-color: #000;
+          color: #fff;
+          text-align: center;
+          line-height: 27px;
+          margin-top: 9px; }
+        #mContentIndex .floor5 .tSelect .tSelectCount ul {
+          float: left;
+          height: 27px;
+          margin-top: 9px;
+          margin-left: 50px; }
+          #mContentIndex .floor5 .tSelect .tSelectCount ul li {
+            float: left;
+            color: #cc9e96;
+            margin-right: 70px;
+            height: 27px;
+            line-height: 27px;
+            position: relative; }
+            #mContentIndex .floor5 .tSelect .tSelectCount ul li::before {
+              content: "";
+              display: block;
+              width: 8px;
+              height: 8px;
+              background-color: #fff;
+              border: 3px solid #000;
+              border-radius: 50%;
+              position: absolute;
+              top: -17px;
+              left: 29px; }
+            #mContentIndex .floor5 .tSelect .tSelectCount ul li.active::before {
+              background-color: #cc9e96;
+              border-color: #cc9e96; }
+          #mContentIndex .floor5 .tSelect .tSelectCount ul li:last-child {
+            margin-right: 0px; }
+    #mContentIndex .floor5 .tHot {
+      padding: 1rem 0.25rem;
+      width: 100%;
+      box-sizing: border-box; }
+      #mContentIndex .floor5 .tHot ul.tHotGoods {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap; }
+        #mContentIndex .floor5 .tHot ul.tHotGoods > li {
+          width: 33%;
+          float: left;
+          height: 110px;
+          border: 1px solid #ccc; }
+          #mContentIndex .floor5 .tHot ul.tHotGoods > li > ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap; }
+        @media screen and (max-width: 700px) {
+          #mContentIndex .floor5 .tHot ul.tHotGoods > li {
+            width: 48%; } }
+        #mContentIndex .floor5 .tHot ul.tHotGoods > li.hot {
+          box-sizing: border-box;
+          padding: 1.2rem 0 0 1.2rem; }
+          #mContentIndex .floor5 .tHot ul.tHotGoods > li.hot ul li {
+            float: left; }
+          #mContentIndex .floor5 .tHot ul.tHotGoods > li.hot ul li:nth-child(n + 2) {
+            float: left;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            margin-left: 2px;
+            margin-bottom: 2px; }
+            #mContentIndex .floor5 .tHot ul.tHotGoods > li.hot ul li:nth-child(n + 2) a {
+              display: inline-block;
+              width: 40px;
+              height: 18px;
+              text-align: center; }
+            #mContentIndex .floor5 .tHot ul.tHotGoods > li.hot ul li:nth-child(n + 2):hover {
+              background-color: #ccc; }
+          #mContentIndex .floor5 .tHot ul.tHotGoods > li.hot ul li:nth-child(2) {
+            margin-left: 0.8rem; }
+        #mContentIndex .floor5 .tHot ul.tHotGoods > li:nth-child(n + 2) {
+          box-sizing: border-box;
+          padding: 1rem;
+          margin-bottom: 0.25rem; }
+          #mContentIndex .floor5 .tHot ul.tHotGoods > li:nth-child(n + 2):hover {
+            border-radius: 12px;
+            border: 1px solid #E0BCA5; }
+          #mContentIndex .floor5 .tHot ul.tHotGoods > li:nth-child(n + 2) p.title {
+            border-bottom: 1px dashed #ccc;
+            height: 30px; }
+            #mContentIndex .floor5 .tHot ul.tHotGoods > li:nth-child(n + 2) p.title i {
+              float: left;
+              background-image: url("../img/nav_ico.png");
+              width: 30px;
+              height: 30px;
+              background-position: 0 -104px; }
+            #mContentIndex .floor5 .tHot ul.tHotGoods > li:nth-child(n + 2) p.title a {
+              display: inline-block;
+              width: 40px;
+              height: 24px;
+              text-align: center;
+              line-height: 22px; }
+              #mContentIndex .floor5 .tHot ul.tHotGoods > li:nth-child(n + 2) p.title a:hover {
+                color: #fff;
+                background-color: #000;
+                border-radius: 12px; }
+          #mContentIndex .floor5 .tHot ul.tHotGoods > li:nth-child(n + 2) ul li {
+            float: left;
+            height: 24px;
+            margin-left: 2px;
+            margin-bottom: 2px;
+            box-sizing: border-box;
+            margin-right: 2px; }
+            #mContentIndex .floor5 .tHot ul.tHotGoods > li:nth-child(n + 2) ul li:hover {
+              border-radius: 12px;
+              border: 1px solid #E0BCA5; }
+            #mContentIndex .floor5 .tHot ul.tHotGoods > li:nth-child(n + 2) ul li a {
+              display: inline-block;
+              padding: 0 4px;
+              height: 24px;
+              text-align: center;
+              line-height: 22px;
+              font-size: 12px;
+              box-sizing: border-box; }
+  #mContentIndex .floor6 {
+    padding-top: 2rem; }
+    #mContentIndex .floor6 .titleInfo {
+      padding-bottom: 1.7rem; }
+      #mContentIndex .floor6 .titleInfo .title {
+        float: left; }
+        #mContentIndex .floor6 .titleInfo .title h3 {
+          float: left;
+          padding: 0 2rem 0 0.5rem;
+          font-size: 1.05rem;
+          height: 1.2rem;
+          line-height: 1.2rem;
+          border-left: 6px solid #000;
+          box-sizing: border-box; }
+        #mContentIndex .floor6 .titleInfo .title span {
+          float: left;
+          font-size: 0.75rem;
+          line-height: 1.2rem;
+          color: #aaa; }
+    #mContentIndex .floor6 .goodCarousel {
+      width: 100%;
+      height: 520px;
+      overflow: hidden;
+      position: relative; }
+      #mContentIndex .floor6 .goodCarousel ul.carouselBox {
+        height: 520px;
+        animation: autoPlay2 40s linear infinite;
+        display: flex;
+        flex-direction: column; }
+        #mContentIndex .floor6 .goodCarousel ul.carouselBox li ul {
+          max-height: 534px;
+          padding: 1rem 0;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: nowrap; }
+          #mContentIndex .floor6 .goodCarousel ul.carouselBox li ul li {
+            margin: 0px 0.5rem 0.5rem 0; }
+            #mContentIndex .floor6 .goodCarousel ul.carouselBox li ul li a {
+              display: inline-block;
+              width: 235px;
+              height: 235px;
+              position: relative; }
+              #mContentIndex .floor6 .goodCarousel ul.carouselBox li ul li a p {
+                width: 100%;
+                height: 38px;
+                line-height: 38px;
+                text-align: center;
+                font-size: 14px;
+                color: #222;
+                background-color: rgba(255, 255, 255, 0.35);
+                position: absolute;
+                bottom: 0px;
+                left: 0px; }
+              #mContentIndex .floor6 .goodCarousel ul.carouselBox li ul li a img {
+                width: 100%; }
+              #mContentIndex .floor6 .goodCarousel ul.carouselBox li ul li a:hover p {
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #fff; }
+      #mContentIndex .floor6 .goodCarousel .carouselControl {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -32px; }
+        #mContentIndex .floor6 .goodCarousel .carouselControl + div.carouselControl {
+          left: auto;
+          right: 0; }
+        #mContentIndex .floor6 .goodCarousel .carouselControl span {
+          display: inline-block;
+          width: 64px;
+          height: 64px;
+          font-size: 64px;
+          color: #666;
+          opacity: 0.7; }
+          #mContentIndex .floor6 .goodCarousel .carouselControl span:hover {
+            text-shadow: -2px 2px 8px #f6f6dd;
+            cursor: pointer;
+            color: #111;
+            opacity: 1; }
+
+@keyframes autoPlay2 {
+  0% { }
+  100% {
+    transform: translateX(-980px); } }
+  #mContentIndex .floor7 {
+    padding-top: 2rem; }
+    #mContentIndex .floor7 .titleInfo {
+      padding-bottom: 1.7rem; }
+      #mContentIndex .floor7 .titleInfo .title {
+        float: left; }
+        #mContentIndex .floor7 .titleInfo .title h3 {
+          float: left;
+          padding: 0 2rem 0 0.5rem;
+          font-size: 1.05rem;
+          height: 1.2rem;
+          line-height: 1.2rem;
+          border-left: 6px solid #000;
+          box-sizing: border-box; }
+        #mContentIndex .floor7 .titleInfo .title span {
+          float: left;
+          font-size: 0.75rem;
+          line-height: 1.2rem;
+          color: #aaa; }
+    @media screen and (max-width: 1100px) {
+      #mContentIndex .floor7 .uLikeShow {
+        overflow: hidden;
+        overflow-x: scroll; } }
+    #mContentIndex .floor7 .uLikeShow {
+      width: 100%; }
+      #mContentIndex .floor7 .uLikeShow ul {
+        width: 100%;
+        min-width: 980px;
+        height: 130px;
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap; }
+        #mContentIndex .floor7 .uLikeShow ul li {
+          float: left;
+          width: 130px;
+          height: 130px; }
+          #mContentIndex .floor7 .uLikeShow ul li a {
+            display: inline-block;
+            width: 130px;
+            height: 130px;
+            overflow: hidden; }
+            #mContentIndex .floor7 .uLikeShow ul li a img {
+              width: 100%;
+              vertical-align: middle; }
+  #mContentIndex .floor8 {
+    padding: 1.2rem 0; }
+    #mContentIndex .floor8 ul {
+      border: 1px dashed #ccc;
+      border-left: none;
+      border-right: none;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      #mContentIndex .floor8 ul li {
+        flex: 1;
+        padding: 1rem 2rem; }
+      @media screen and (max-width: 645px) {
+        #mContentIndex .floor8 ul li {
+          flex: none;
+          width: 260px;
+          margin: 0 auto;
+          text-align: center; }
+        #mContentIndex .floor8 ul li:nth-child(2) img {
+          margin-right: -2rem; } }
+      #mContentIndex .floor8 ul li:nth-child(1) p:nth-child(1) {
+        font-weight: 600; }
+      #mContentIndex .floor8 ul li:nth-child(1) p + p {
+        margin-top: 1rem; }
+      #mContentIndex .floor8 ul li:nth-child(2) p {
+        float: left;
+        margin-right: 1rem; }
+        #mContentIndex .floor8 ul li:nth-child(2) p a {
+          display: block;
+          height: 30px;
+          line-height: 30px; }
+          #mContentIndex .floor8 ul li:nth-child(2) p a i {
+            float: left;
+            width: 30px;
+            height: 30px;
+            background-image: url("../img/pc_new_icon.png");
+            background-position: 30px -106px; }
+        #mContentIndex .floor8 ul li:nth-child(2) p a:nth-child(2) {
+          margin-top: 1rem; }
+          #mContentIndex .floor8 ul li:nth-child(2) p a:nth-child(2) i {
+            background-position: 30px -143px; }
+      #mContentIndex .floor8 ul li:nth-child(2) img {
+        margin-top: 0.75rem; }
+      #mContentIndex .floor8 ul li:nth-child(3) p:nth-child(1) span {
+        font-weight: 600; }
+      #mContentIndex .floor8 ul li:nth-child(3) p + p {
+        margin-top: 1rem;
+        font-size: 0.75rem; }
+
+/* 响应式部分样式 */
+/* 响应式#mHeader */
+@media screen and (max-width: 743px) {
+  html,
+  body {
+    font-size: 14px; }
+  /* #mHeader头部通用版块 */
+  #mHeader .topNavbar .rightUser {
+    float: left;
+    width: 100%; }
+  #mHeader .shopNavbar ul.shopNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+    #mHeader .shopNavbar ul.shopNav li a {
+      font-size: 1.2rem; }
+  #mHeader .shopNavbar .searchBar {
+    display: block;
+    width: 80%;
+    height: 46px;
+    margin: 0.25rem auto 0;
+    border: 1px solid #aaa;
+    display: flex;
+    border-radius: 1.25rem;
+    overflow: hidden; }
+    #mHeader .shopNavbar .searchBar input.searchItem {
+      flex: 3;
+      height: 100%;
+      font-size: 1.1rem; }
+    #mHeader .shopNavbar .searchBar button.searchBtn {
+      flex: 1;
+      height: 100%; }
+  /* #mFooter脚部通用版块 */
+  #mFooter .wrap .sayAuthor {
+    width: 100%;
+    padding-top: 1.2rem; }
+    #mFooter .wrap .sayAuthor p.say {
+      font-size: 1.1rem; }
+    #mFooter .wrap .sayAuthor p.author {
+      padding-top: 0.5rem;
+      font-size: 0.8rem;
+      padding-right: 0.5rem; }
+  #mFooter .wrap .copyright {
+    /* 盗版声明 */
+    width: 100%;
+    padding-bottom: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #mFooter .wrap .friendLink {
+    /* 友情链接 */
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #mFooter .wrap .friendLink ul li {
+      margin-left: 4px;
+      margin-right: 14px; }
+  #mFooter .wrap .versionNum {
+    /* 版本号 */
+    width: 100%; }
+  #mFooter .wrap .wantJoin {
+    /* 5.加盟链接logo */
+    display: none; }
+  /* #slideNav固定跟随的导航框 */
+  /* #slideNav 固定跟随的导航框(App下载二维码+商家入驻入口) */
+  #slideNav {
+    display: none; }
+  .feedBack {
+    position: fixed;
+    bottom: 180px;
+    left: 84%; }
+    .feedBack .feedBackBtn {
+      /* 默认hidden,滚动一定距离block */ }
+  #mContentIndex {
+    /* 1F */
+    /* 2F */ }
+    #mContentIndex .floor1 .wrap .hotGood {
+      display: none; }
+    #mContentIndex .floor2 .titleInfo .title span {
+      display: none; }
+    #mContentIndex .floor2 .titleInfo .likesOperate {
+      float: right; }
+    #mContentIndex .floor4 .handjobShow li {
+      margin: 0.42rem;
+      width: 170px; } }
+
+/*  floor4 手工艺人 媒体查询 小 767以下 */
+@media screen and (max-width: 767px) {
+  #mContentIndex .floor4 ul.handjobShow {
+    justify-content: space-around; }
+    #mContentIndex .floor4 ul.handjobShow li {
+      width: 46%;
+      border: 1px solid #ccc;
+      margin: 0.42rem; }
+      #mContentIndex .floor4 ul.handjobShow li div.handjobWrap {
+        float: left;
+        width: 100%;
+        height: 100%; }
+        #mContentIndex .floor4 ul.handjobShow li div.handjobWrap .handjobPic {
+          float: left;
+          width: 100%;
+          height: 182px;
+          overflow: hidden;
+          text-align: center; }
+          #mContentIndex .floor4 ul.handjobShow li div.handjobWrap .handjobPic img {
+            vertical-align: top;
+            width: 100%;
+            height: 100%; }
+        #mContentIndex .floor4 ul.handjobShow li div.handjobWrap .handjobName {
+          position: relative;
+          float: left;
+          width: 100%;
+          height: 16%;
+          padding: 0 1rem;
+          box-sizing: border-box;
+          border-top: 1px solid #ccc;
+          background-color: #f3f3f3;
+          font-size: 0.5rem;
+          color: #aaa;
+          box-sizing: border-box; }
+          #mContentIndex .floor4 ul.handjobShow li div.handjobWrap .handjobName p {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #000;
+            width: 80%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+          #mContentIndex .floor4 ul.handjobShow li div.handjobWrap .handjobName .linkIcon {
+            position: absolute;
+            top: 8px;
+            right: 4px;
+            width: 21px;
+            height: 22px;
+            overflow: hidden;
+            border-radius: 50%; }
+            #mContentIndex .floor4 ul.handjobShow li div.handjobWrap .handjobName .linkIcon img {
+              position: relative;
+              top: -180px;
+              left: -3px; }
+        #mContentIndex .floor4 ul.handjobShow li div.handjobWrap:hover .handjobName {
+          background-color: #ccc; } }
+
+/*  floor5 今日精选 媒体查询 中 768-1023 */
+@media screen and (max-width: 450px) {
+  #mContentIndex .floor5 .tHot ul.tHotGoods > li {
+    width: 100%; } }

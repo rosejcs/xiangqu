@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no" />
+  <title>wg_goodsPage</title>
+  <link rel="stylesheet" href="./lib/fonts/font_qntbk/iconfont.css" />
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/good.css" />
+</head>
+
+<body>
+  <!-- #mHeader头部通用版块 -->
+  <header id="mHeader">
+      <div class="topNavbar">
+        <!-- topNavbar顶部导航栏 ( 左侧logo返回首页链接部分 以及 右侧用户登录+注册+设计师入驻+下载App部分 )-->
+        <div class="wrap clearfix">
+          <!-- leftLogo (左侧 logo首页链接 部分)-->
+          <div class="leftLogo">
+            <a href="index.html" class="leftLogoLink"><img src="./img/pc_logo2.jpg" alt="首页" /></a>
+          </div>
+          <!-- rightUser (右侧用户 登录+注册+设计师入驻+下载App 部分)-->
+          <div class="rightUser">
+            <ul class="loginAndReg">
+              <li class="loginReg">
+                <!-- 未登录 -->
+                <div class="unlog">
+                  <a href="javascript:;" class="login">登录</a>
+                  <a href="javascript:;" class="reg">注册</a>
+                </div>
+                <!-- 已登录 -->
+              <div class="logged">
+                  <div class="userWrap">
+                    <a href="javascript:;" class="user">
+                      <span class="nameOrPhone">15812345600</span>
+                      <span><img src="./img/icon/dropdown.png"></span>
+                    </a>
+                    <div class="uconfig clearfix">
+                      <p>
+                        <a href="javascript:;">我的订单</a>
+                      </p>
+                      <p>
+                        <a href="javascript:;">个人设置</a>
+                      </p>
+                      <p>
+                        <a href="javascript:;">退出</a>
+                      </p>
+  
+                    </div>
+                  </div>
+                  <a href="javascript:;" class="shopCart">
+                    购物车
+                    <span class="counts">10</span>
+                  </a>
+                  <a href="javacript:;" class="notice">
+                    通知
+                    <span class="counts"></span>
+                  </a>
+  
+                </div>
+              </li>
+              <li class="designerIn float-l"><a href="#">设计师入驻</a></li>
+              <li class="downloadApp float-l">
+                <a href="#">下载App<span class="iconfont icon-unfold"></span></a>
+                <div class="dBarCode">
+                  <img src="./img/FrPIlipUd8Wgy0WwQ81zE3L-_gim" alt="" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- shopNavbar下部导航框 ( 左侧 shopNav 导航 以及 右侧 searchBar 搜索部分 )-->
+      <div class="shopNavbar">
+        <div class="wrap clearfix">
+          <!-- shopNav左侧商店菜单导航 -->
+          <ul class="shopNav">
+            <li class="active"><a href="#">首页</a></li>
+            <li><a href="#">逛</a></li>
+            <li><a href="#">设计师</a></li>
+            <li><a href="#">小站</a></li>
+          </ul>
+          <!-- searchBar 右侧搜索框 -->
+          <div class="searchBar">
+            <input type="text" class="searchItem" placeholder="搜索您感兴趣的品牌" />
+            <button type="submit" class="searchBtn">
+              <span class="iconfont icon-search"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  <!-- /#mHeader头部通用版块 -->
+
+  <!-- #goodPageContent -->
+  <div id="goodPageContent" class="clearfix">
+    <!-- 1F -->
+    <!-- 点击具体某个商品的具体信息 -->
+    <!-- .thisGoodMsg -->
+    <div class="gFloor1 thisGoodMsg wrap clearfix">
+      <!-- 对应品牌.gBrand -->
+      <div class="gBrand clearfix">
+        <a href="" class="brandPic"><img src="./img/brandPic.jpg" alt="" /></a>
+
+        <a href="" class="brandName"> 橘滋堂健康养生馆 </a>
+        <a href="" class="brandIntr">
+          balabala小魔仙,李斯特建最爱的魔法能量balabala小魔仙,李斯特建最爱的魔法能量balabala小魔仙,李斯特建最爱的魔法能量balabala小魔仙,李斯特建最爱的魔法能量
+        </a>
+      </div>
+      <!-- 具体商品信息.goodInfo -->
+      <div class="goodInfo clearfix">
+        <!-- 商品大图 -->
+        <div class="goodInfoPic">
+          <div><img src="./img/goodInfoPic1.jpg" alt="" /></div>
+          <a href="#" class="likeCount"><i class="iconfont icon-like"></i><span>1</span></a>
+        </div>
+        <!-- 商品介绍和价格等 -->
+        <div class="goodInfoWord">
+          <!-- 商品介绍.goodInfoIntr -->
+          <div class="goodInfoIntr">
+            <h3 class="goodName">皇子牌皇子话梅100g（6瓶装）</h3>
+            <p class="goodDesigner">
+              设计师 <span class="designer">133****3904</span>
+            </p>
+            <p class="goodBrand">
+              品牌 <span class="brand">潘务庵橘滋堂</span>
+            </p>
+          </div>
+
+          <!-- 购买部分.goodBuy -->
+          <div class="goodBuy clearfix">
+            <!-- 数量部分 -->
+            <p>数量</p>
+            <ul class="buyCount clearfix">
+              <li class="cut1">-</li>
+              <li class="count"><input type="text" value="1" /></li>
+              <li class="add1">+</li>
+              <li class="goodStock">库存<i class="stockCount"> 15</i>件</li>
+            </ul>
+          </div>
+          <!-- 价格邮费部分 -->
+          <div class="price clearfix">
+            <p>￥<span class="goodPrice">39.00</span></p>
+            <p>邮费: <span class="mailPrice">8.0</span> 元</p>
+            <p>
+              <a href="#">
+                <i class="iconfont icon-interactive"></i>联系卖家</a>
+            </p>
+          </div>
+
+          <!-- 按钮选择部分 -->
+          <div class="buyBtn clearfix">
+            <a href="#" class="buyNow">立即购买</a>
+            <a href="#" class="addToCar">加入购物车</a>
+          </div>
+
+          <!-- 卖家担保promiss -->
+          <div class="promiss clearfix">
+            <span> <i>7</i> 7天无理由退货</span>
+            <span> <i>→</i> 担保交易</span>
+          </div>
+
+          <!-- 想去微信wechat -->
+          <div class="wechat clearfix">
+            <span><img src="./img/wechat.jpg" alt="" width="70px" /></span>
+            <p>
+              加想去君微信:successfulsofe,成为本君好友,超多朋友福利,带你认识更多设计师哦~
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2F -->
+    <!-- 同类推荐 -->
+    <!-- .gSame -->
+    <div class="gFloor2 gSame wrap clearfix">
+      <!-- 标题.title -->
+      <h3 class="title">同类推荐</h3>
+
+      <!-- .gSameBox -->
+      <div class="gSameBox">
+        <ul class="clearfix">
+          <li>
+            <a href="javascript:;"><img src="./img/gSamePic1.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="javascript:;"><img src="./img/gSamePic2.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="javascript:;"><img src="./img/gSamePic3.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="javascript:;"><img src="./img/gSamePic4.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="javascript:;"><img src="./img/gSamePic5.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="javascript:;"><img src="./img/gSamePic1.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="javascript:;"><img src="./img/gSamePic2.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="javascript:;"><img src="./img/gSamePic3.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="javascript:;"><img src="./img/gSamePic4.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="javascript:;"><img src="./img/gSamePic5.jpg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 3F -->
+    <!-- 商品描述和评论 -->
+    <div class="gFloor3 gAbout wrap clearfix">
+      <!-- 顶部标签 -->
+      <div class="pageBox clearfix">
+        <div class="gIntroduct active">
+          <h3><a href="#">商品描述</a></h3>
+        </div>
+        <div class="buyerSay">
+          <h3><a href="#">评论</a></h3>
+        </div>
+      </div>
+
+      <!-- 底部显示标签对应的内容 -->
+      <div class="pageShow">
+        <div class="wrap">
+          <!-- 商品的分类 -->
+          <div class="classifies clearfix">
+            <ul class="clearfix">
+              <li><a href="#">NGX</a></li>
+              <li><a href="#">NGX</a></li>
+              <li><a href="#">NGX</a></li>
+              <li><a href="#">NGXSML</a></li>
+            </ul>
+          </div>
+
+          <!-- 图片部分 -->
+          <ul class="goodImg">
+            <li><img src="./img/goodIntr1.jpg" alt=""></li>
+            <li><img src="./img/goodIntr2.jpg" alt=""></li>
+            <li><img src="./img/goodIntr3.jpg" alt=""></li>
+            <li><img src="./img/goodIntr4.jpg" alt=""></li>
+            <li><img src="./img/goodIntr5.jpg" alt=""></li>
+            <li><img src="./img/goodIntr6.jpg" alt=""></li>
+            <li><img src="./img/goodIntr7.jpg" alt=""></li>
+            <li><img src="./img/goodIntr8.jpg" alt=""></li>
+            <li><img src="./img/goodIntr9.jpg" alt=""></li>
+            <li><img src="./img/goodIntr10.jpg" alt=""></li>
+            <li><img src="./img/goodIntr11.jpg" alt=""></li>
+            <li><img src="./img/goodIntr12.jpg" alt=""></li>
+            <li><img src="./img/goodIntr13.jpg" alt=""></li>
+            <li><img src="./img/goodIntr14.jpg" alt=""></li>
+            <li><img src="./img/goodIntr15.jpg" alt=""></li>
+            <li><img src="./img/goodIntr16.jpg" alt=""></li>
+            <li><img src="./img/goodIntr17.jpg" alt=""></li>
+            <li><img src="./img/goodIntr18.jpg" alt=""></li>
+            <li><img src="./img/goodIntr19.jpg" alt=""></li>
+            <li><img src="./img/goodIntr20.jpg" alt=""></li>
+            <li><img src="./img/goodIntr21.jpg" alt=""></li>
+            <li><img src="./img/goodIntr22.jpg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4F -->
+    <!-- 喜欢此商品的人 -->
+    <!-- gliker -->
+    <div class="gFloor4 wrap clearfix">
+      <!-- title -->
+      <div class="title clearfix">
+        <h3>喜欢这个商品的人</h3>
+      </div>
+
+      <!-- 用户头像 -->
+      <div class="gliker">
+        <ul>
+          <li>
+            <a href="javascript:;"> <img src="./img/liker1.jpg" alt="" /> </a>
+          </li>
+          <li>
+            <a href="javascript:;"> <img src="./img/liker2.jpg" alt="" /> </a>
+          </li>
+          <li>
+            <a href="javascript:;"> <img src="./img/liker3.jpg" alt="" /> </a>
+          </li>
+          <li>
+            <a href="javascript:;"> <img src="./img/liker1.jpg" alt="" /> </a>
+          </li>
+          <li>
+            <a href="javascript:;"> <img src="./img/liker2.jpg" alt="" /> </a>
+          </li>
+          <li>
+            <a href="javascript:;"> <img src="./img/liker3.jpg" alt="" /> </a>
+          </li>
+          <li>
+            <a href="javascript:;"> <img src="./img/liker1.jpg" alt="" /> </a>
+          </li>
+          <li>
+            <a href="javascript:;"> <img src="./img/liker2.jpg" alt="" /> </a>
+          </li>
+          <li>
+            <a href="javascript:;"> <img src="./img/liker3.jpg" alt="" /> </a>
+          </li>
+          <li>
+            <a href="javascript:;"> <img src="./img/liker1.jpg" alt="" /> </a>
+          </li>
+          <li>
+            <a href="javascript:;"> <img src="./img/liker2.jpg" alt="" /> </a>
+          </li>
+          <li>
+            <a href="javascript:;"> <img src="./img/liker3.jpg" alt="" /> </a>
+          </li>
+          <li>
+            <a href="javascript:;"> <img src="./img/liker1.jpg" alt="" /> </a>
+          </li>
+          <li>
+            <a href="javascript:;"> <img src="./img/liker2.jpg" alt="" /> </a>
+          </li>
+          <li>
+            <a href="javascript:;"> <img src="./img/liker3.jpg" alt="" /> </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- #mFooter底部通用版块 -->
+  <footer id="mFooter">
+    <div class="wrap clearfix">
+      <!-- 1.say&author名人名言 -->
+      <div class="sayAuthor">
+        <!-- 1.1.say -->
+        <p class="say">
+          “决定设计哪个产品跟决定如何度过人生一样，最关键是看你的见解。”
+        </p>
+        <!-- 1.2.author -->
+        <p class="author">by <span> 米谷久美</span></p>
+      </div>
+
+      <!-- 2.copyright 版权声明,社区跳转 -->
+      <div class="copyright clearfix">
+        <!-- link左侧网站链接 -->
+        <div class="link">
+          <a href="#"><span class="sina"></span>新浪微博</a>
+          <a href="#"><span class="douban"></span>豆瓣小站</a>
+          <a href="#"><span class="renren"></span>人人小站</a>
+        </div>
+        <!-- copyWord中间版权声明 -->
+        <div class="copyWord">
+          <p>Copyright 2017 版权所有 xiangqu.com 浙ICP备12027496</p>
+        </div>
+
+        <!-- goShopLink -->
+        <div class="goShopLink">
+          <a href="#">热门精选</a> <a href="#">热门分类</a>
+        </div>
+      </div>
+
+      <!-- 3.friendLink 友情链接合作伙伴 -->
+      <div class="friendLink clearfix">
+        <ul class="aboutUs clearfix">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">用户帮助</a></li>
+          <li><a href="#">商务合作</a></li>
+        </ul>
+        <ul class="theLink">
+          <li>友情链接:</li>
+          <li><a href="#">想去网</a></li>
+          <li><a href="#">手机想去</a></li>
+          <li><a href="#">爱图购</a></li>
+          <li><a href="#">更多...</a></li>
+        </ul>
+      </div>
+
+      <!-- 4.工商编号和安全联盟 -->
+      <div class="versionNum clearfix">
+        <div class="verNum">
+          <a href="#">
+            <img src="./img/FinEALw7ifYIV2baxOAzDe1ctz1S" alt="" />
+            <span>浙公网安备 33010602001965号</span>
+          </a>
+        </div>
+        <div class="unionPic">
+          <a href="#"> <img src="./img/sm_83x30.png" alt="" /> </a>
+        </div>
+      </div>
+
+      <!-- 5.wantJoin入驻链接 -->
+      <div class="wantJoin float-r clearfix">
+        <a href="#"><img src="./img/xq_bottom_img.png" alt="" /></a>
+      </div>
+    </div>
+  </footer>
+  <!-- /#mFooter底部通用版块 -->
+
+  <!-- #theFixed固定跟随通用版块 -->
+  <!-- #slideNav 固定跟随的导航框(App下载二维码+商家入驻入口) -->
+  <div id="slideNav">
+    <div class="slideLogo clearfix"><a href="#"></a></div>
+    <p>想去App下载</p>
+    <div class="barCode"></div>
+  </div>
+  <!-- /#slideNav -->
+  <!-- .feedBack 固定位置的返回顶部按钮 -->
+  <div class="feedBack">
+    <div class="feedBackBtn"><a href="#"></a></div>
+    <a href="#" class="advice"></a>
+  </div>
+  <!-- /.feedBack -->
+</body>
+
+</html>

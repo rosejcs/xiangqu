@@ -1,0 +1,340 @@
+// rmg版心
+.rmgwrap {
+  width: 180px;
+  margin: 0 auto;
+}
+
+
+#rmContent {
+  >.rmClassify {
+    // height: 310px;
+
+    >.hdBg {
+      width: 100%;
+      height: 4px;
+      margin-top: 2rem;
+      background-image: linear-gradient(to right, #000, #333);
+
+      >span {
+        float: left;
+        width: 69px;
+        height: 4px;
+        margin-left: 2.25rem;
+        background: url("../img/design_bar.png") no-repeat;
+
+        >span {
+          float: left;
+          font-size: 1.1rem;
+          margin-top: -0.6rem;
+          margin-left: 1rem;
+        }
+      }
+
+      // span:nth-child(2) {
+      //   position: absolute;
+      //   top:1px;
+      //   left:1px;
+      // }
+    }
+
+    .theClassify {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      // 分类盒子公共样式
+      .theBox {
+        margin-top: 1rem;
+        padding: 3.5rem 0 0 2rem;
+        width: 237px;
+        height: 140px;
+        border: 1px solid #999;
+        box-sizing: border-box;
+
+        .boxHead {
+          float: left;
+          padding-right: 1rem;
+          border-right: 1px solid #333;
+
+          a {
+            font-size: 1.1rem;
+
+            span {
+              float: right;
+            }
+          }
+        }
+
+        .boxContent {
+          float: left;
+
+          ul {
+            max-width: 137px;
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 0.5rem;
+            margin-top: -0.15rem;
+
+            li {
+              height: 23px;
+              margin: 0 2px;
+
+              a {
+                font-size: 12px;
+                color: #555;
+                padding: 0px 4px;
+                border-radius: 20px;
+
+                &:hover {
+                  border: 1px solid #e0bca5;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+  >.rmGoods {
+    margin-top: 3rem;
+
+    .rmgTitle {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 20px;
+
+      >h2 {
+        // float: left;
+        border: 5px solid #000;
+        border-top: none;
+        border-bottom: none;
+        padding: 0 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+
+      >a {
+        // float: left;
+        margin-left: 1rem;
+        padding: 2px 8px;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        background-color: #e6e6e6;
+        color: #666;
+
+        &:hover {
+          background-color: #aaa;
+          background-image: linear-gradient(to right, #666, #777, #888, #999, #aaa, #bbb, #ccc);
+          color: #efefef;
+        }
+
+        &.active {
+          color: #efefef;
+          background-image: linear-gradient(to right, #000, #111, #222, #333, #444, #555);
+        }
+      }
+
+      >span {
+        // float:left;
+        flex: 1;
+        width: 100%;
+        height: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        background: url("../img/site_dotted.png");
+      }
+    }
+
+    // 商品展示部分
+    .rmgShow {
+      // 外部盒子
+      margin-top: 2rem;
+
+
+
+      >ul {
+        display: flex;
+        justify-content: space-between;
+
+        // 内部商品单个
+        >li {
+          // 商品具体信息
+          >ul {
+            width: 310px;
+            padding: 10px;
+            &:hover{
+              border:1px solid #ccc;
+              box-sizing: border-box;
+            }
+            >li {
+              // width: 290px;
+            }
+
+            li,
+            a,
+            span {
+              font-size: 0.8rem;
+            }
+
+            // 图片
+            >li:nth-child(1).rmgPic {
+              img {
+                width: 290px;
+              }
+            }
+
+            >li:nth-child(2).rmgPriceAndLike {
+
+              // 横线.overlayline
+              >div:nth-child(1) {
+                width: 100%;
+                height: 1px;
+                background-color: #333;
+                // position: absolute;
+                // top: 10px;
+                margin-top: 1.2rem;
+              }
+
+              >div:nth-child(2) {
+                min-width: 125px;
+                max-width: 170px;
+                margin: 0 auto;
+                background-color: #fff;
+                z-index: 2;
+                position: relative;
+                top: -0.75rem;
+
+                // font-size: 0.98rem;
+                span {
+                  float: left;
+                }
+
+                span:nth-child(1) {
+                  padding-right: 1rem;
+                }
+
+                span:nth-child(2) {
+                  width: 15px;
+                  height: 12px;
+                  margin-top: 3px;
+                  margin-right: 0.5rem;
+                  background: url("../img/like.png") no-repeat;
+
+                  // 鼠标hover,心边变红
+                  &:hover {
+                    background-image: url("../img/like_h.png");
+                  }
+
+                  // 带有liked类名时,变成实心
+                  &.liked {
+                    background-image: url("../img/liked.png");
+                  }
+
+                  // hover,likeCounts数字变化
+                }
+
+                span:nth-child(3).likeCounts {
+                  float: right;
+                  height: 19px;
+                  overflow: hidden;
+
+                  &::after {
+                    content: "+1";
+                    display: block;
+                  }
+                }
+              }
+
+
+
+            }
+
+            >li:nth-child(3).rmgShop {
+              text-align: center;
+              padding: 1rem 0;
+
+              >a {
+                display: inline-block;
+                width: 63px;
+                height: 16px;
+                border-radius: 12px;
+                padding: 1px 0.5rem;
+                overflow: hidden;
+
+                >span:nth-child(1) {}
+
+                >span:nth-child(2) {
+                  display: none;
+                  width: 70px;
+                }
+
+                transition: width 0.5s linear;
+
+                &:hover {
+                  width: 140px; //js 代码可以设置width+70就等于加上隐藏部分文字的长度
+                  background-color: #000;
+                  color: #fff;
+
+                  >span:nth-child(2) {
+                    display: inline;
+                  }
+                }
+              }
+
+
+            }
+
+            >li:nth-child(4).rmgParts {
+              text-align: center;
+              line-height: 16px;
+              padding-bottom: 1rem;
+              border-bottom: 1px dashed #aaa;
+              margin-bottom: 1.25rem;
+
+              i {
+                display: inline-block;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: #555;
+                margin: 0 1rem 0.2rem;
+              }
+            }
+
+            >li:nth-child(5).designer {
+              padding-bottom: 1rem;
+              border-bottom: 1px dashed #aaa;
+              margin-bottom: 1rem;
+              div{
+                display: inline-block;
+                >a.dsPic {
+                  float: left;
+                  margin: 0.25rem;
+                }
+  
+                >p.dsIntr {
+                  float: left;
+                  width: 125px;
+  
+                  >a {
+                    display: block;
+                  }
+  
+                  >a.productIntr {
+                    color: #666;
+                  }
+                }
+              }
+              
+            }
+
+          }
+        }
+      }
+    }
+
+  }
+}

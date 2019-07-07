@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>逛</title>
+  <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./lib/fonts/font_qntbk/iconfont.css" />
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/roam.css" />
+</head>
+
+<body>
+  <!-- #mHeader头部通用版块 -->
+  <header id="mHeader">
+    <div class="topNavbar">
+      <!-- topNavbar顶部导航栏 ( 左侧logo返回首页链接部分 以及 右侧用户登录+注册+设计师入驻+下载App部分 )-->
+      <div class="wrap clearfix">
+        <!-- leftLogo (左侧 logo首页链接 部分)-->
+        <div class="leftLogo">
+          <a href="index.html" class="leftLogoLink"><img src="./img/pc_logo2.jpg" alt="首页" /></a>
+        </div>
+        <!-- rightUser (右侧用户 登录+注册+设计师入驻+下载App 部分)-->
+        <div class="rightUser">
+          <ul class="loginAndReg">
+            <li class="loginReg">
+              <!-- 未登录 -->
+              <div class="unlog">
+                <a href="javascript:;" class="login">登录</a>
+                <a href="javascript:;" class="reg">注册</a>
+              </div>
+              <!-- 已登录 -->
+              <div class="logged">
+                <div class="userWrap">
+                  <a href="javascript:;" class="user">
+                    <span class="nameOrPhone">15812345600</span>
+                    <span><img src="./img/icon/dropdown.png"></span>
+                  </a>
+                  <div class="uconfig clearfix">
+                    <p>
+                      <a href="javascript:;">我的订单</a>
+                    </p>
+                    <p>
+                      <a href="javascript:;">个人设置</a>
+                    </p>
+                    <p>
+                      <a href="javascript:;">退出</a>
+                    </p>
+
+                  </div>
+                </div>
+                <a href="javascript:;" class="shopCart">
+                  购物车
+                  <span class="counts">10</span>
+                </a>
+                <a href="javacript:;" class="notice">
+                  通知
+                  <span class="counts"></span>
+                </a>
+
+              </div>
+            </li>
+            <li class="designerIn float-l"><a href="#">设计师入驻</a></li>
+            <li class="downloadApp float-l">
+              <a href="#">下载App<span class="iconfont icon-unfold"></span></a>
+              <div class="dBarCode">
+                <img src="./img/FrPIlipUd8Wgy0WwQ81zE3L-_gim" alt="" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- shopNavbar下部导航框 ( 左侧 shopNav 导航 以及 右侧 searchBar 搜索部分 )-->
+    <div class="shopNavbar">
+      <div class="wrap clearfix">
+        <!-- shopNav左侧商店菜单导航 -->
+        <ul class="shopNav">
+          <li class="active"><a href="#">首页</a></li>
+          <li><a href="#">逛</a></li>
+          <li><a href="#">设计师</a></li>
+          <li><a href="#">小站</a></li>
+        </ul>
+        <!-- searchBar 右侧搜索框 -->
+        <div class="searchBar">
+          <input type="text" class="searchItem" placeholder="搜索您感兴趣的品牌" />
+          <button type="submit" class="searchBtn">
+            <span class="iconfont icon-search"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /#mHeader头部通用版块 -->
+
+
+  <!-- #rmContent内容区 -->
+  <div id="rmContent" class="clearfix">
+    <!-- 头部商品分类名 -->
+    <div class="rmClassify wrap clearfix">
+      <!-- 头部标题及背景.hdBg -->
+      <div class="hdBg clearfix">
+        <span><span>逛商品</span></span>
+      </div>
+
+      <!-- 分类内容区.theClassify -->
+      <div class="theClassify">
+        <div class="theBox clearfix">
+          <div class="boxHead">
+            <a href="#"><span>女人</span><br><span>广场</span></a>
+          </div>
+          <div class="boxContent">
+            <ul>
+              <li><a href="#">上衣</a></li>
+              <!-- <li><a href="#">日居五毒</a></li> -->
+              <!-- <li><a href="#">无敌日居</a></li> -->
+              <li><a href="#">下装</a></li>
+              <li><a href="#">包袋</a></li>
+              <li><a href="#">鞋靴</a></li>
+              <li><a href="#">配饰</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="theBox clearfix">
+          <div class="boxHead">
+            <a href="#"><span>女人</span><br><span>广场</span></a>
+          </div>
+          <div class="boxContent">
+            <ul>
+              <li><a href="#">上衣</a></li>
+              <!-- <li><a href="#">日居五毒</a></li> -->
+              <!-- <li><a href="#">无敌日居</a></li> -->
+              <li><a href="#">下装</a></li>
+              <li><a href="#">包袋</a></li>
+              <li><a href="#">鞋靴</a></li>
+              <li><a href="#">配饰</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="theBox clearfix">
+          <div class="boxHead">
+            <a href="#"><span>女人</span><br><span>广场</span></a>
+          </div>
+          <div class="boxContent">
+            <ul>
+              <li><a href="#">上衣</a></li>
+              <!-- <li><a href="#">日居五毒</a></li> -->
+              <!-- <li><a href="#">无敌日居</a></li> -->
+              <li><a href="#">下装</a></li>
+              <li><a href="#">包袋</a></li>
+              <li><a href="#">鞋靴</a></li>
+              <li><a href="#">配饰</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="theBox clearfix">
+          <div class="boxHead">
+            <a href="#"><span>女人</span><br><span>广场</span></a>
+          </div>
+          <div class="boxContent">
+            <ul>
+              <li><a href="#">上衣</a></li>
+              <!-- <li><a href="#">日居五毒</a></li> -->
+              <!-- <li><a href="#">无敌日居</a></li> -->
+              <li><a href="#">下装</a></li>
+              <li><a href="#">包袋</a></li>
+              <li><a href="#">鞋靴</a></li>
+              <li><a href="#">配饰</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="theBox clearfix">
+          <div class="boxHead">
+            <a href="#"><span>女人</span><br><span>广场</span></a>
+          </div>
+          <div class="boxContent">
+            <ul>
+              <li><a href="#">上衣</a></li>
+              <!-- <li><a href="#">日居五毒</a></li> -->
+              <!-- <li><a href="#">无敌日居</a></li> -->
+              <li><a href="#">下装</a></li>
+              <li><a href="#">包袋</a></li>
+              <li><a href="#">鞋靴</a></li>
+              <li><a href="#">配饰</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="theBox clearfix">
+          <div class="boxHead">
+            <a href="#"><span>女人</span><br><span>广场</span></a>
+          </div>
+          <div class="boxContent">
+            <ul>
+              <li><a href="#">上衣</a></li>
+              <!-- <li><a href="#">日居五毒</a></li> -->
+              <!-- <li><a href="#">无敌日居</a></li> -->
+              <li><a href="#">下装</a></li>
+              <li><a href="#">包袋</a></li>
+              <li><a href="#">鞋靴</a></li>
+              <li><a href="#">配饰</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="theBox clearfix">
+          <div class="boxHead">
+            <a href="#"><span>女人</span><br><span>广场</span></a>
+          </div>
+          <div class="boxContent">
+            <ul>
+              <li><a href="#">上衣</a></li>
+              <!-- <li><a href="#">日居五毒</a></li> -->
+              <!-- <li><a href="#">无敌日居</a></li> -->
+              <li><a href="#">下装</a></li>
+              <li><a href="#">包袋</a></li>
+              <li><a href="#">鞋靴</a></li>
+              <li><a href="#">配饰</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="theBox clearfix">
+          <div class="boxHead">
+            <a href="#"><span>女人</span><br><span>广场</span></a>
+          </div>
+          <div class="boxContent">
+            <ul>
+              <li><a href="#">上衣</a></li>
+              <!-- <li><a href="#">日居五毒</a></li> -->
+              <!-- <li><a href="#">无敌日居</a></li> -->
+              <li><a href="#">下装</a></li>
+              <li><a href="#">包袋</a></li>
+              <li><a href="#">鞋靴</a></li>
+              <li><a href="#">配饰</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- /头部商品分类名 -->
+
+    <!-- 分类商品内容 -->
+    <div class="rmGoods wrap clearfix">
+      <!-- 标题 -->
+      <div class="rmgTitle">
+        <h2>逛商品</h2>
+        <a href="#" class="active">最新</a>
+        <a href="#">推荐</a>
+        <a href="#">最热</a>
+        <span></span>
+      </div>
+
+
+      <!-- 图片区域 -->
+      <div class="rmgShow">
+        <ul>
+          <li>
+            <!-- 每个商品通用样式:图-价格+心-店名-分类名-设计师 -->
+            <ul>
+              <!-- 图片 -->
+              <li class="rmgPic"><img src="./img/rmgPic1.jpg" alt=""></li>
+              <!-- 价格和喜欢 -->
+              <li class="rmgPriceAndLike rmgwrap">
+                <div class="overlayline"></div>
+                <div class="clearfix">
+                  <span class="price">￥18888.00</span>
+                  <span class="liked"></span>
+                  <span class="likeCounts">
+                    <i>11111</i>
+                  </span>
+                </div>
+              </li>
+              <!-- 商品所属商店 -->
+              <li class="rmgShop rmgwrap">
+                <a href="#">
+                  <!-- <span>Freelance</span> -->
+                  Freelance
+                  <span> 的全部商品</span>
+                </a>
+              </li>
+              <!-- 商品所属分类 -->
+              <li class="rmgParts rmgwrap">
+                <a href="#">印花T恤</a>
+                <i></i>
+                <a href="#">耳环耳饰</a>
+              </li>
+              <!-- 商品所属设计师 -->
+              <li class="designer rmgwrap">
+                <div>
+                  <a href="#" class="dsPic">
+                    <img src="./img/designer_djxe.jpg" alt="">
+                  </a>
+                  <p class="dsIntr">
+                    <a href="#" class="dsName">Sangmin Bae</a>
+                    <a href="#" class="productIntr">商品材质54/8不锈钢伞骨，聚酯纤维把手开合方式自动开合防晒指...</a>
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /分类商品内容 -->
+
+
+
+
+  </div>
+
+
+
+  <!-- /rmContent内容区 -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- #mFooter底部通用版块 -->
+  <footer id="mFooter">
+    <div class="wrap clearfix">
+      <!-- 1.say&author名人名言 -->
+      <div class="sayAuthor">
+        <!-- 1.1.say -->
+        <p class="say">
+          “决定设计哪个产品跟决定如何度过人生一样，最关键是看你的见解。”
+        </p>
+        <!-- 1.2.author -->
+        <p class="author">by <span> 米谷久美</span></p>
+      </div>
+
+      <!-- 2.copyright 版权声明,社区跳转 -->
+      <div class="copyright clearfix">
+        <!-- link左侧网站链接 -->
+        <div class="link">
+          <a href="#"><span class="sina"></span>新浪微博</a>
+          <a href="#"><span class="douban"></span>豆瓣小站</a>
+          <a href="#"><span class="renren"></span>人人小站</a>
+        </div>
+        <!-- copyWord中间版权声明 -->
+        <div class="copyWord">
+          <p>Copyright 2017 版权所有 xiangqu.com 浙ICP备12027496</p>
+        </div>
+
+        <!-- goShopLink -->
+        <div class="goShopLink">
+          <a href="#">热门精选</a> <a href="#">热门分类</a>
+        </div>
+      </div>
+
+      <!-- 3.friendLink 友情链接合作伙伴 -->
+      <div class="friendLink clearfix">
+        <ul class="aboutUs clearfix">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">用户帮助</a></li>
+          <li><a href="#">商务合作</a></li>
+        </ul>
+        <ul class="theLink">
+          <li>友情链接:</li>
+          <li><a href="#">想去网</a></li>
+          <li><a href="#">手机想去</a></li>
+          <li><a href="#">爱图购</a></li>
+          <li><a href="#">更多...</a></li>
+        </ul>
+      </div>
+
+      <!-- 4.工商编号和安全联盟 -->
+      <div class="versionNum clearfix">
+        <div class="verNum">
+          <a href="#">
+            <img src="./img/FinEALw7ifYIV2baxOAzDe1ctz1S" alt="" />
+            <span>浙公网安备 33010602001965号</span>
+          </a>
+        </div>
+        <div class="unionPic">
+          <a href="#"> <img src="./img/sm_83x30.png" alt="" /> </a>
+        </div>
+      </div>
+
+      <!-- 5.wantJoin入驻链接 -->
+      <div class="wantJoin float-r clearfix">
+        <a href="#"><img src="./img/xq_bottom_img.png" alt="" /></a>
+      </div>
+    </div>
+  </footer>
+  <!-- /#mFooter底部通用版块 -->
+
+  <!-- #theFixed固定跟随通用版块 -->
+  <!-- #slideNav 固定跟随的导航框(App下载二维码+商家入驻入口) -->
+  <div id="slideNav">
+    <div class="slideLogo clearfix"><a href="#"></a></div>
+    <p>想去App下载</p>
+    <div class="barCode"></div>
+  </div>
+  <!-- /#slideNav -->
+  <!-- .feedBack 固定位置的返回顶部按钮 -->
+  <div class="feedBack">
+    <div class="feedBackBtn"><a href="#"></a></div>
+    <a href="#" class="advice"></a>
+  </div>
+  <!-- /.feedBack -->
+
+
+
+
+
+
+</body>
+
+</html>

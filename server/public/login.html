@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>wg_login</title>
+  <link rel="stylesheet" href="./lib/fonts/font_qntbk/iconfont.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- 顶部logo -->
+    <div class="login_logo">
+      <a href="#">
+        <img src="./img/login_logo.jpg" alt="">
+      </a>
+    </div>
+    <!-- 中部内容区 -->
+    <div class="wrapper1">
+      <!-- 大图 -->
+      <div class="login_pic">
+        <img src="./img/login_left_pic_03.jpg" alt="">
+      </div>
+      <!-- 用户信息填写框 -->
+      <div class="user_msg">
+        <div class="wrapper2">
+          <h2>账户登录</h2>
+          <!-- <div>使用想去账号登录</div> -->
+          <!-- btn -->
+          <ul class="btn">
+            <li>
+              <span class="icon iconfont icon-people_fill"></span>
+              <input type="text" class="phone" placeholder="请输入您的手机号">
+            </li>
+            <li>
+              <span class="icon iconfont icon-lock_fill"></span>
+              <input type="text" class="upwd" placeholder="请输入您的密码">
+            </li>
+            <li class="loginbtn">
+              <input type="button" value="登录" class="userlogin">
+            </li>
+          </ul>
+          <a href="#" class="forget">
+            忘记密码
+            <span class="icon iconfont icon-play"></span>
+          </a>
+          <!-- QQ/sina -->
+          <div class="otherway">
+            <div class="otherports">
+              <a href="#"><img src="./img/three_logo.gif" alt=""></a>
+              <a href="#"><img src="./img/three_logo.gif" alt=""></a>
+              <a href="#"><img src="./img/three_logo.gif" alt=""></a>
+            </div>
+            <div class="gotoReg">
+              <span class="small_size my_gray">还没有账号? </span>
+              <a href="#"> 立即注册<span class="icon iconfont icon-play"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 提示框 -->
+      <div class="notice">
+        <div class="phoneNotice">
+          手机号码不能为空
+        </div>
+        <div class="pwdNotice">
+          密码不能为空
+        </div>
+        <div class="wrongNotice">
+          手机号码或密码错误
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+<!-- js -->
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/ajax.js"></script>
+<script src="./js/queryUser.js"></script>
+<script src="./js/login.js"></script>
+</body>
+</html>

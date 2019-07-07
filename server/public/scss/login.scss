@@ -1,0 +1,231 @@
+/* 具体样式 */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  background-image: url("../img/brickwall.png");
+}
+html .container,
+body .container {
+  width: 980px;
+  height: 100%;
+  margin: 0 auto;
+}
+html .container .login_logo,
+body .container .login_logo {
+  width: 100%;
+  height: 98px;
+}
+html .container .login_logo a,
+body .container .login_logo a {
+  display: inline-block;
+  height: 100%;
+  line-height: 98px;
+  margin-left: 50px;
+}
+html .container .wrapper1,
+body .container .wrapper1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+}
+html .container .wrapper1 .login_pic,
+body .container .wrapper1 .login_pic {
+  width: 550px;
+  min-width: 550px;
+}
+html .container .wrapper1 .login_pic img,
+body .container .wrapper1 .login_pic img {
+  height: 100%;
+}
+html .container .wrapper1 .user_msg,
+body .container .wrapper1 .user_msg {
+  width: 390px;
+  height: 450px;
+  min-width: 390px;
+  border: 1px solid #aeaeae;
+  background-color: #fafafa;
+}
+html .container .wrapper1 .user_msg .wrapper2,
+body .container .wrapper1 .user_msg .wrapper2 {
+  position: relative;
+  width: 348px;
+  height: 450px;
+  padding: 0 22px;
+}
+html .container .wrapper1 .user_msg .wrapper2 h2,
+body .container .wrapper1 .user_msg .wrapper2 h2 {
+  text-align: center;
+  padding: 1.75rem 0;
+  font-size: 16px;
+  border-bottom: 1px solid #aeaeae;
+  margin-bottom: 1.75rem;
+}
+html .container .wrapper1 .user_msg .wrapper2 ul.btn,
+body .container .wrapper1 .user_msg .wrapper2 ul.btn {
+  width: 348px;
+  height: 212px;
+  margin-top: 3rem;
+}
+html .container .wrapper1 .user_msg .wrapper2 ul.btn li,
+body .container .wrapper1 .user_msg .wrapper2 ul.btn li {
+  width: 348px;
+  height: 44px;
+  border: 1px solid #aeaeae;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px 6px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
+  overflow: hidden;
+}
+html .container .wrapper1 .user_msg .wrapper2 ul.btn li .userlogin,
+body .container .wrapper1 .user_msg .wrapper2 ul.btn li .userlogin {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  color: #fafafa;
+  cursor: pointer;
+}
+html .container .wrapper1 .user_msg .wrapper2 ul.btn li .userlogin:hover,
+body .container .wrapper1 .user_msg .wrapper2 ul.btn li .userlogin:hover {
+  background-color: #000;
+}
+html .container .wrapper1 .user_msg .wrapper2 ul.btn li span,
+body .container .wrapper1 .user_msg .wrapper2 ul.btn li span {
+  flex: 1;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  color: #aeaeae;
+}
+html .container .wrapper1 .user_msg .wrapper2 ul.btn li input,
+body .container .wrapper1 .user_msg .wrapper2 ul.btn li input {
+  flex: 9;
+  height: 41px;
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+  font-size: 1.25rem;
+}
+html .container .wrapper1 .user_msg .wrapper2 ul.btn li.loginbtn,
+body .container .wrapper1 .user_msg .wrapper2 ul.btn li.loginbtn {
+  margin-top: 50px;
+}
+html .container .wrapper1 .user_msg .wrapper2 a.forget,
+body .container .wrapper1 .user_msg .wrapper2 a.forget {
+  float: right;
+  position: relative;
+  top: -100px;
+}
+html .container .wrapper1 .user_msg .wrapper2 .otherway,
+body .container .wrapper1 .user_msg .wrapper2 .otherway {
+  position: relative;
+  border-top: 1px solid #aeaeae;
+  margin-top: 17px;
+}
+html .container .wrapper1 .user_msg .wrapper2 .otherway .otherports,
+body .container .wrapper1 .user_msg .wrapper2 .otherway .otherports {
+  padding-left: 103px;
+}
+html .container .wrapper1 .user_msg .wrapper2 .otherway .otherports a,
+body .container .wrapper1 .user_msg .wrapper2 .otherway .otherports a {
+  float: left;
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+html .container .wrapper1 .user_msg .wrapper2 .otherway .otherports a + a,
+body .container .wrapper1 .user_msg .wrapper2 .otherway .otherports a + a {
+  margin-left: 1.75rem;
+}
+html .container .wrapper1 .user_msg .wrapper2 .otherway .otherports a:nth-of-type(2) img,
+body .container .wrapper1 .user_msg .wrapper2 .otherway .otherports a:nth-of-type(2) img {
+  position: relative;
+  right: 52px;
+}
+html .container .wrapper1 .user_msg .wrapper2 .otherway .otherports a:nth-of-type(3) img,
+body .container .wrapper1 .user_msg .wrapper2 .otherway .otherports a:nth-of-type(3) img {
+  position: relative;
+  right: 105px;
+}
+html .container .wrapper1 .user_msg .wrapper2 .otherway .gotoReg,
+body .container .wrapper1 .user_msg .wrapper2 .otherway .gotoReg {
+  position: absolute;
+  bottom: -100px;
+  left: 114px;
+}
+html .container .wrapper1 .user_msg .wrapper2::before,
+body .container .wrapper1 .user_msg .wrapper2::before {
+  content: "使用想去账号登录";
+  position: absolute;
+  top: 55px;
+  left: 144px;
+  width: 110px;
+  font-size: 10px;
+  color: #aeaeae;
+  background-color: #fafafa;
+  text-align: center;
+}
+html .container .wrapper1 .user_msg .wrapper2::after,
+body .container .wrapper1 .user_msg .wrapper2::after {
+  content: "使用社交账号登录";
+  position: absolute;
+  bottom: 114px;
+  left: 144px;
+  width: 110px;
+  font-size: 10px;
+  color: #aeaeae;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+/* 提示框 */
+.container .wrapper1 .notice{
+  position: fixed;
+  top: 50%;
+  left:50%;
+  margin-top: -30px;
+  margin-left: -140px;
+  width: 280px;
+  text-align: center;
+  display:none;
+}
+.container .wrapper1 .notice .phoneNotice{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 22px;
+  color:#eee;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 20px;
+  /* position: absolute; */
+  display:none;
+}
+.container .wrapper1 .notice .pwdNotice{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 22px;
+  color:#eee;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 20px;
+  /* position: absolute; */
+  display:none;
+}
+.container .wrapper1 .notice .wrongNotice{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 22px;
+  color:#eee;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 20px;
+  /* position: absolute; */
+  display:none;
+}

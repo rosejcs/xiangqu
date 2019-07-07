@@ -1,0 +1,370 @@
+@charset "UTF-8";
+#goodPageContent {
+  background-color: #f9f9f9;
+  /* 1F */
+  /* 2F */
+  /* 3F */
+  /* 商品描述和评论 */
+  /* 4F */
+  /* 喜欢此商品的人 */ }
+  #goodPageContent .gFloor1 {
+    background-color: #fff;
+    margin-top: 1rem; }
+    #goodPageContent .gFloor1 .gBrand {
+      padding: 2rem 2rem;
+      border-bottom: 1px solid #ccc; }
+      #goodPageContent .gFloor1 .gBrand a {
+        float: left; }
+        #goodPageContent .gFloor1 .gBrand a.brandPic {
+          width: 50px;
+          height: 50px;
+          overflow: hidden; }
+          #goodPageContent .gFloor1 .gBrand a.brandPic img {
+            width: 100%; }
+        #goodPageContent .gFloor1 .gBrand a.brandName {
+          font-size: 18px;
+          height: 50px;
+          line-height: 50px;
+          padding-left: 1rem; }
+        #goodPageContent .gFloor1 .gBrand a.brandIntr {
+          font-size: 12px;
+          color: #666;
+          height: 14px;
+          line-height: 14px;
+          padding-top: 0.25rem; }
+    #goodPageContent .gFloor1 .goodInfo {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem 0; }
+      #goodPageContent .gFloor1 .goodInfo .goodInfoPic {
+        flex: 14;
+        position: relative; }
+        #goodPageContent .gFloor1 .goodInfo .goodInfoPic div {
+          width: 100%; }
+          #goodPageContent .gFloor1 .goodInfo .goodInfoPic div img {
+            width: 100%; }
+        #goodPageContent .gFloor1 .goodInfo .goodInfoPic a.likeCount {
+          position: absolute;
+          top: 5%;
+          right: 5%;
+          width: 80px;
+          height: 30px;
+          background-color: rgba(255, 255, 255, 0.5);
+          border-radius: 15px;
+          line-height: 30px;
+          font-size: 16px;
+          display: flex; }
+          #goodPageContent .gFloor1 .goodInfo .goodInfoPic a.likeCount i {
+            flex: 1;
+            font-size: 1.75rem;
+            text-align: center; }
+          #goodPageContent .gFloor1 .goodInfo .goodInfoPic a.likeCount span {
+            flex: 1; }
+          #goodPageContent .gFloor1 .goodInfo .goodInfoPic a.likeCount:hover {
+            background-color: rgba(255, 255, 255, 0.9); }
+      #goodPageContent .gFloor1 .goodInfo .goodInfoWord {
+        flex: 10;
+        padding-left: 2rem; }
+        #goodPageContent .gFloor1 .goodInfo .goodInfoWord .goodInfoIntr {
+          float: left; }
+          #goodPageContent .gFloor1 .goodInfo .goodInfoWord .goodInfoIntr h3.goodName {
+            font-weight: 500;
+            font-size: 18px;
+            min-width: 252px;
+            height: 42px;
+            line-height: 42px; }
+          #goodPageContent .gFloor1 .goodInfo .goodInfoWord .goodInfoIntr p {
+            font-size: 16px;
+            height: 30px;
+            line-height: 30px; }
+            #goodPageContent .gFloor1 .goodInfo .goodInfoWord .goodInfoIntr p span {
+              padding-left: 2rem; }
+          #goodPageContent .gFloor1 .goodInfo .goodInfoWord .goodInfoIntr p:nth-child(3) span {
+            padding-left: 45px; }
+        #goodPageContent .gFloor1 .goodInfo .goodInfoWord .goodBuy {
+          padding-top: 0.75rem;
+          float: left; }
+          #goodPageContent .gFloor1 .goodInfo .goodInfoWord .goodBuy p {
+            font-size: 16px;
+            height: 30px;
+            line-height: 30px; }
+          #goodPageContent .gFloor1 .goodInfo .goodInfoWord .goodBuy ul.buyCount {
+            float: left; }
+            #goodPageContent .gFloor1 .goodInfo .goodInfoWord .goodBuy ul.buyCount li {
+              float: left;
+              width: 30px;
+              height: 30px;
+              text-align: center;
+              line-height: 26px;
+              cursor: pointer;
+              font-weight: 600;
+              font-size: 24px;
+              border: 1px solid #111; }
+              #goodPageContent .gFloor1 .goodInfo .goodInfoWord .goodBuy ul.buyCount li.count {
+                width: 50px;
+                border-left: none;
+                border-right: none;
+                overflow: hidden;
+                font-size: 1rem; }
+                #goodPageContent .gFloor1 .goodInfo .goodInfoWord .goodBuy ul.buyCount li.count input {
+                  width: 100%;
+                  height: 100%;
+                  text-align: center;
+                  outline: none;
+                  border: none;
+                  font-weight: 600;
+                  font-size: 1.25rem; }
+              #goodPageContent .gFloor1 .goodInfo .goodInfoWord .goodBuy ul.buyCount li.goodStock {
+                float: left;
+                color: #666;
+                font-size: 0.75rem;
+                width: 60px;
+                height: 30px;
+                line-height: 30px;
+                padding-left: 1rem;
+                cursor: normal;
+                border: none;
+                font-weight: 500; }
+        #goodPageContent .gFloor1 .goodInfo .goodInfoWord .price {
+          float: left;
+          width: 100%;
+          padding-top: 1.75rem; }
+          #goodPageContent .gFloor1 .goodInfo .goodInfoWord .price p {
+            float: left; }
+          #goodPageContent .gFloor1 .goodInfo .goodInfoWord .price p:nth-child(1) {
+            width: 100%;
+            font-weight: 600;
+            font-size: 1.25rem;
+            padding-bottom: 0.75rem; }
+          #goodPageContent .gFloor1 .goodInfo .goodInfoWord .price p:nth-child(3) {
+            padding-left: 3.25rem; }
+        #goodPageContent .gFloor1 .goodInfo .goodInfoWord .buyBtn {
+          float: left;
+          width: 100%;
+          padding-top: 0.5rem; }
+          #goodPageContent .gFloor1 .goodInfo .goodInfoWord .buyBtn a {
+            float: left;
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 18px;
+            border: 2px solid #000;
+            background-color: #000;
+            color: #fff;
+            margin-right: 1rem;
+            margin-top: 1rem; }
+            #goodPageContent .gFloor1 .goodInfo .goodInfoWord .buyBtn a:nth-child(2) {
+              background-color: #fefefe;
+              color: #111;
+              margin-right: 0; }
+        #goodPageContent .gFloor1 .goodInfo .goodInfoWord .promiss {
+          float: left;
+          padding-top: 1.2rem; }
+          #goodPageContent .gFloor1 .goodInfo .goodInfoWord .promiss span {
+            font-size: 1rem;
+            float: left;
+            line-height: 24px;
+            color: #666; }
+            #goodPageContent .gFloor1 .goodInfo .goodInfoWord .promiss span i {
+              float: left;
+              width: 24px;
+              height: 24px;
+              line-height: 24px;
+              text-align: center;
+              border: 1px solid #ccc;
+              border-radius: 50%;
+              margin-right: 0.5rem; }
+            #goodPageContent .gFloor1 .goodInfo .goodInfoWord .promiss span:nth-child(1) {
+              padding-right: 1.25rem; }
+        #goodPageContent .gFloor1 .goodInfo .goodInfoWord .wechat {
+          float: left;
+          width: 320px;
+          margin-top: 1rem;
+          border: 1px solid #ccc;
+          background-color: #eee; }
+          #goodPageContent .gFloor1 .goodInfo .goodInfoWord .wechat span {
+            float: left;
+            width: 70px;
+            height: 70px;
+            margin-right: 0.75rem; }
+            #goodPageContent .gFloor1 .goodInfo .goodInfoWord .wechat span img {
+              width: 100%; }
+  #goodPageContent .gFloor2 {
+    padding-top: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff; }
+    #goodPageContent .gFloor2 h3.title {
+      width: 70px;
+      height: 33px;
+      line-height: 33px;
+      font-weight: 400;
+      margin-left: 1rem;
+      border-bottom: 2px solid #666; }
+    #goodPageContent .gFloor2 .gSameBox {
+      margin: 1rem 0.2rem;
+      overflow: hidden; }
+      #goodPageContent .gFloor2 .gSameBox ul {
+        height: 136px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        animation: gun 50s linear infinite; }
+        #goodPageContent .gFloor2 .gSameBox ul li {
+          padding: 0 0.5rem; }
+          #goodPageContent .gFloor2 .gSameBox ul li a {
+            float: left;
+            width: 136px;
+            height: 136px;
+            transition: transform 0.6s linear; }
+            #goodPageContent .gFloor2 .gSameBox ul li a img {
+              width: 100%; }
+            #goodPageContent .gFloor2 .gSameBox ul li a:hover {
+              transform: scale(1.15); }
+  #goodPageContent .gFloor3 .pageBox {
+    border-bottom: 2px solid #aaa; }
+    #goodPageContent .gFloor3 .pageBox div {
+      float: left;
+      padding-left: 1rem; }
+      #goodPageContent .gFloor3 .pageBox div h3 {
+        height: 50px;
+        line-height: 50px; }
+        #goodPageContent .gFloor3 .pageBox div h3 a {
+          font-weight: 400; }
+        #goodPageContent .gFloor3 .pageBox div h3:hover {
+          border-bottom: 2px solid #000;
+          box-sizing: border-box; }
+      #goodPageContent .gFloor3 .pageBox div.active h3 {
+        border-bottom: 2px solid #000;
+        box-sizing: border-box; }
+  #goodPageContent .gFloor3 .pageShow {
+    width: 100%;
+    background: url("../img/detail_text.png") no-repeat right top; }
+    #goodPageContent .gFloor3 .pageShow .wrap {
+      width: 80%;
+      min-width: 368px; }
+      #goodPageContent .gFloor3 .pageShow .wrap .classifies {
+        padding: 3rem 0; }
+        #goodPageContent .gFloor3 .pageShow .wrap .classifies ul {
+          float: left; }
+          #goodPageContent .gFloor3 .pageShow .wrap .classifies ul li {
+            float: left;
+            margin-right: 1rem; }
+            #goodPageContent .gFloor3 .pageShow .wrap .classifies ul li a {
+              float: left;
+              padding: 0.2rem 0.5rem;
+              background-color: #ccc;
+              border-radius: 20px; }
+              #goodPageContent .gFloor3 .pageShow .wrap .classifies ul li a:hover {
+                background-color: #111;
+                color: #efefef; }
+      #goodPageContent .gFloor3 .pageShow .wrap ul.goodImg {
+        width: 100%; }
+        #goodPageContent .gFloor3 .pageShow .wrap ul.goodImg li {
+          width: 100%; }
+          #goodPageContent .gFloor3 .pageShow .wrap ul.goodImg li img {
+            width: 100%; }
+    #goodPageContent .gFloor3 .pageShow a img {
+      width: 100%;
+      max-width: 770px;
+      vertical-align: top; }
+  #goodPageContent .gFloor4 {
+    margin-top: 1rem; }
+    #goodPageContent .gFloor4 .title {
+      padding-left: 1rem; }
+      #goodPageContent .gFloor4 .title h3 {
+        float: left;
+        height: 50px;
+        line-height: 50px;
+        font-weight: 400;
+        border-bottom: 2px solid #000;
+        box-sizing: border-box; }
+    #goodPageContent .gFloor4 .gliker {
+      margin: 1rem 1rem;
+      overflow: hidden; }
+      #goodPageContent .gFloor4 .gliker ul {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 60px; }
+        #goodPageContent .gFloor4 .gliker ul li {
+          width: 60px;
+          height: 60px;
+          padding-right: 1rem; }
+          #goodPageContent .gFloor4 .gliker ul li a {
+            float: left;
+            width: 60px; }
+            #goodPageContent .gFloor4 .gliker ul li a img {
+              width: 100%; }
+
+/* 写一个通用动画 */
+@keyframes gun {
+  0% { }
+  100% {
+    transform: translateX(-750px); } }
+
+/* 媒体查询部分 */
+@media screen and (max-width: 749px) {
+  #goodPageContent .gFloor1 .goodInfo .goodInfoPic {
+    flex: none;
+    width: 100%; }
+  #goodPageContent .gFloor1 .goodInfo .goodInfoWord {
+    flex: none;
+    width: 100%; }
+    #goodPageContent .gFloor1 .goodInfo .goodInfoWord .goodInfoIntr {
+      width: 300px;
+      float: left;
+      padding-bottom: 1rem; }
+    #goodPageContent .gFloor1 .goodInfo .goodInfoWord .goodBuy {
+      width: 300px;
+      float: right; }
+    #goodPageContent .gFloor1 .goodInfo .goodInfoWord .price {
+      float: right;
+      width: 300px; }
+    #goodPageContent .gFloor1 .goodInfo .goodInfoWord .buyBtn {
+      float: left;
+      width: 300px; }
+    #goodPageContent .gFloor1 .goodInfo .goodInfoWord .promiss {
+      float: right;
+      width: 300px; }
+    #goodPageContent .gFloor1 .goodInfo .goodInfoWord .wechat {
+      float: left;
+      width: 300px; } }
+
+@media screen and (max-width: 686px) {
+  #goodPageContent .gFloor1 .goodInfo .goodInfoPic {
+    flex: none;
+    width: 100%; }
+  #goodPageContent .gFloor1 .goodInfo .goodInfoWord {
+    flex: none;
+    width: 100%;
+    padding: 0;
+    padding-left: 2.25rem; }
+    #goodPageContent .gFloor1 .goodInfo .goodInfoWord .goodInfoIntr {
+      width: 300px;
+      float: left; }
+    #goodPageContent .gFloor1 .goodInfo .goodInfoWord .goodBuy {
+      width: 300px;
+      float: left; }
+    #goodPageContent .gFloor1 .goodInfo .goodInfoWord .price {
+      float: left;
+      width: 300px; }
+    #goodPageContent .gFloor1 .goodInfo .goodInfoWord .buyBtn {
+      float: left;
+      width: 300px; }
+    #goodPageContent .gFloor1 .goodInfo .goodInfoWord .promiss {
+      float: left;
+      width: 300px; }
+    #goodPageContent .gFloor1 .goodInfo .goodInfoWord .wechat {
+      float: left;
+      width: 300px; } }
+
+@media screen and (max-width: 415px) {
+  #goodPageContent {
+    /* 1F */ }
+    #goodPageContent .gFloor1 .goodInfo .goodInfoPic {
+      flex: none;
+      width: 100%; }
+    #goodPageContent .gFloor1 .goodInfo .goodInfoIntr {
+      flex: none;
+      width: 100%; } }

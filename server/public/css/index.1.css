@@ -1,0 +1,277 @@
+@charset "UTF-8";
+.wrap {
+  width: 980px;
+  margin: 0 auto;
+  border: 1px dashed goldenrod;
+  box-sizing: border-box; }
+
+/* #mHeader头部通用版块 */
+#mHeader {
+  height: 105px;
+  background-color: #fefefe; }
+  #mHeader .topNavbar {
+    width: 100%;
+    height: 45px;
+    background-color: #010101; }
+    #mHeader .topNavbar .leftLogo {
+      height: 100%; }
+      #mHeader .topNavbar .leftLogo a.leftLogoLink {
+        float: left;
+        height: 45px;
+        padding: 7px 0;
+        box-sizing: border-box; }
+    #mHeader .topNavbar .rightUser ul.loginAndReg li {
+      float: left;
+      height: 45px;
+      width: 92px;
+      text-align: center; }
+      #mHeader .topNavbar .rightUser ul.loginAndReg li a {
+        line-height: 45px;
+        color: #fff;
+        text-align: center; }
+      #mHeader .topNavbar .rightUser ul.loginAndReg li + li {
+        margin-left: 1rem; }
+    #mHeader .topNavbar .rightUser ul.loginAndReg li.loginReg a.login {
+      margin-right: 1rem; }
+    #mHeader .topNavbar .rightUser ul.loginAndReg li.designerIn a {
+      color: #f6d036; }
+    #mHeader .topNavbar .rightUser ul.loginAndReg li.downloadApp {
+      position: relative; }
+      #mHeader .topNavbar .rightUser ul.loginAndReg li.downloadApp a {
+        position: relative; }
+        #mHeader .topNavbar .rightUser ul.loginAndReg li.downloadApp a span {
+          position: absolute;
+          top: -12px;
+          right: -17px;
+          width: 16px;
+          height: 16px;
+          color: #fff; }
+      #mHeader .topNavbar .rightUser ul.loginAndReg li.downloadApp div.dBarCode {
+        display: none;
+        float: left;
+        width: 118px;
+        height: 118px;
+        margin-top: 2px;
+        border: 1px solid #000; }
+        #mHeader .topNavbar .rightUser ul.loginAndReg li.downloadApp div.dBarCode img {
+          width: 100%;
+          background-size: cover; }
+      #mHeader .topNavbar .rightUser ul.loginAndReg li.downloadApp:hover div.dBarCode {
+        display: block; }
+  #mHeader .shopNavbar {
+    height: 60px;
+    background-color: #fff; }
+    #mHeader .shopNavbar ul.shopNav {
+      float: left;
+      padding: 15px 0; }
+      #mHeader .shopNavbar ul.shopNav li {
+        float: left; }
+        #mHeader .shopNavbar ul.shopNav li a {
+          display: inline-block;
+          height: 25px;
+          font-size: 1.33rem;
+          padding: 1px 8px; }
+          #mHeader .shopNavbar ul.shopNav li a:hover {
+            border-bottom: 3px solid #000; }
+      #mHeader .shopNavbar ul.shopNav li + li {
+        margin-left: 4rem;
+        position: relative; }
+        #mHeader .shopNavbar ul.shopNav li + li::before {
+          content: "";
+          display: block;
+          width: 4px;
+          height: 4px;
+          background-color: #000;
+          position: absolute;
+          top: 11px;
+          left: -23px; }
+    #mHeader .shopNavbar .searchBar {
+      float: right;
+      border: 1px solid #aaa;
+      margin: 12px 0px; }
+      #mHeader .shopNavbar .searchBar input.searchItem {
+        float: left;
+        width: 264px;
+        height: 28px;
+        line-height: 30px;
+        border: none;
+        padding-left: 1.25rem;
+        font-size: 1rem; }
+        #mHeader .shopNavbar .searchBar input.searchItem:focus {
+          outline: none; }
+      #mHeader .shopNavbar .searchBar button.searchBtn {
+        float: left;
+        width: 43px;
+        height: 30px;
+        border: none;
+        cursor: pointer;
+        background-color: #000; }
+        #mHeader .shopNavbar .searchBar button.searchBtn:focus {
+          outline: none; }
+        #mHeader .shopNavbar .searchBar button.searchBtn span {
+          color: #fff;
+          font-size: 2rem; }
+
+/* #mFooter底部通用版块 */
+#mFooter {
+  background-color: #000;
+  color: #fff;
+  color: #888; }
+  #mFooter .wrap a {
+    color: #888; }
+  #mFooter .wrap .sayAuthor {
+    /* 名人名言 */
+    width: 675px;
+    height: 90px;
+    color: #fff;
+    padding-top: 25px;
+    margin: 0px 285px 35px 0px; }
+    #mFooter .wrap .sayAuthor a {
+      color: #fff; }
+    #mFooter .wrap .sayAuthor p.say {
+      font-size: 18px; }
+    #mFooter .wrap .sayAuthor p.author {
+      padding-top: 25px;
+      text-align: right;
+      font-size: 14px; }
+  #mFooter .wrap .copyright {
+    /* 盗版声明 */
+    width: auto;
+    padding-bottom: 6px; }
+    #mFooter .wrap .copyright div {
+      float: left;
+      height: 25px;
+      line-height: 25px; }
+    #mFooter .wrap .copyright .link a {
+      float: left;
+      height: 25px;
+      line-height: 25px;
+      margin-right: 20px; }
+      #mFooter .wrap .copyright .link a span {
+        float: left;
+        width: 25px;
+        height: 25px;
+        background: url("../img/ico_common.png") no-repeat 0px -159px;
+        background-size: 325%; }
+    #mFooter .wrap .copyright .link a:nth-of-type(2) span {
+      background-position: 0px -186px; }
+    #mFooter .wrap .copyright .link a:nth-of-type(3) span {
+      background-position: -32px -186px; }
+    #mFooter .wrap .copyright .goShopLink a {
+      margin-left: 8px; }
+  #mFooter .wrap .friendLink {
+    /* 友情链接 */
+    padding: 6px 0;
+    border-top: 1px solid #666;
+    margin-right: 240px; }
+    #mFooter .wrap .friendLink ul {
+      float: left; }
+      #mFooter .wrap .friendLink ul li {
+        float: left;
+        margin-left: 8px;
+        margin-right: 24px; }
+  #mFooter .wrap .versionNum {
+    /* 版本号 */
+    width: 80%; }
+    #mFooter .wrap .versionNum .verNum {
+      text-align: center; }
+      #mFooter .wrap .versionNum .verNum a,
+      #mFooter .wrap .versionNum .verNum img,
+      #mFooter .wrap .versionNum .verNum span {
+        display: inline-block; }
+      #mFooter .wrap .versionNum .verNum a img {
+        height: 15px;
+        vertical-align: middle;
+        margin-top: -3px; }
+      #mFooter .wrap .versionNum .verNum a span {
+        height: 18px;
+        line-height: 18px; }
+    #mFooter .wrap .versionNum .unionPic {
+      text-align: center;
+      padding-bottom: 14px; }
+  #mFooter .wrap .wantJoin {
+    /* 5.加盟链接logo */
+    margin-top: -275px; }
+
+/* #slideNav固定跟随的导航框 */
+/* #slideNav 固定跟随的导航框(App下载二维码+商家入驻入口) */
+#slideNav {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  width: 120px;
+  height: 238px;
+  background-color: #111; }
+  #slideNav::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: -23px;
+    right: 0px;
+    background: #fff url("../img/ico_common.png") no-repeat -204px -462px;
+    cursor: pointer; }
+  #slideNav .slideLogo {
+    width: 120px;
+    height: 86px;
+    background-image: url("../img/ruzhu_bottom.png"); }
+    #slideNav .slideLogo a {
+      float: left;
+      width: 108px;
+      height: 26px;
+      margin: 49px 0px 0px 6px; }
+  #slideNav p {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; }
+  #slideNav .barCode {
+    width: 110px;
+    height: 110px;
+    background: url("../img/qr.png") no-repeat;
+    margin: 5px 5px; }
+
+/* .feedBack固定跟随的返回顶部 */
+.feedBack {
+  position: fixed;
+  bottom: 285px;
+  left: 92%; }
+  .feedBack .feedBackBtn {
+    /* 默认hidden,滚动一定距离block */
+    display: block;
+    text-align: center;
+    margin-bottom: 8px; }
+    .feedBack .feedBackBtn a {
+      display: inline-block;
+      width: 28px;
+      height: 117px;
+      background-image: url("../img/gotop.gif");
+      background-position: left bottom; }
+      .feedBack .feedBackBtn a:hover {
+        background-image: url("../img/gotop_hover.gif"); }
+  .feedBack a.advice {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background-image: url("../img/advice.png");
+    background-position: -12px -11px; }
+    .feedBack a.advice:hover {
+      background-image: url("../img/advice-hover.png"); }
+
+/* 响应式部分样式 */
+/* 响应式#mHeader */
+/* 
+  body
+    #mHeader
+      .topNavbar
+      .shopNavbar
+    #mContentIndex
+    #mFooter
+
+*/
+@media screen and (max-width: 991px) {
+  body .wrap {
+    width: 90%; } }

@@ -1,0 +1,32 @@
+<div>
+  商品id:<input type="text" id="gid">
+  <input type="button" value="查询" onclick="goodDetail()">
+</div>
+<div id="box"></div>
+<script type="text/javascript">
+  function goodDetail() {
+    // 1.创建ajax对象xhr
+    var xhr = new XMLHttpRequest();
+    // 2.绑定监听事件
+    xhr.onreadystatechange = function () {
+      if(xhr.readyState==4 && xhr.status==200) {
+        var result = xhr.responseText;
+        // console.log(result);
+        var good = JSON.parse(result)[0];
+        console.log(good);
+        console.log(good.gPic1);
+        console.log(typeof good.gPic1);
+        // var htmlStr = '<div style="background:url('+good.gPic1+')">';
+        var htmlStr = '<img src="'+good.gPic1+'" alt="替换">';
+        console.log(htmlStr);
+        box.innerHTML = htmlStr;
+      }
+    }
+    // 3.打开连接,创建请求
+    var url = '/good/detail?gid='+gid.value;
+    xhr.open('get', url, true);
+
+    // 4.发送请求
+    xhr.send(null);
+  }
+</script>

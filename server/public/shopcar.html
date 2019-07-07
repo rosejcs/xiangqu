@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>shopCar</title>
+  <link rel="stylesheet" href="./lib/fonts/font_qntbk/iconfont.css" />
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/shopcar.css" />
+</head>
+
+<body>
+  <!-- #mHeader头部通用版块 -->
+  <header id="mHeader">
+      <div class="topNavbar">
+        <!-- topNavbar顶部导航栏 ( 左侧logo返回首页链接部分 以及 右侧用户登录+注册+设计师入驻+下载App部分 )-->
+        <div class="wrap clearfix">
+          <!-- leftLogo (左侧 logo首页链接 部分)-->
+          <div class="leftLogo">
+            <a href="index.html" class="leftLogoLink"><img src="./img/pc_logo2.jpg" alt="首页" /></a>
+          </div>
+          <!-- rightUser (右侧用户 登录+注册+设计师入驻+下载App 部分)-->
+          <div class="rightUser">
+            <ul class="loginAndReg">
+              <li class="loginReg">
+                <!-- 未登录 -->
+                <div class="unlog">
+                  <a href="javascript:;" class="login">登录</a>
+                  <a href="javascript:;" class="reg">注册</a>
+                </div>
+                <!-- 已登录 -->
+                <div class="logged">
+                  <div class="userWrap">
+                    <a href="javascript:;" class="user">
+                      <span class="nameOrPhone">15812345600</span>
+                      <span><img src="./img/icon/dropdown.png"></span>
+                    </a>
+                    <div class="uconfig clearfix">
+                      <p>
+                        <a href="javascript:;">我的订单</a>
+                      </p>
+                      <p>
+                        <a href="javascript:;">个人设置</a>
+                      </p>
+                      <p>
+                        <a href="javascript:;">退出</a>
+                      </p>
+  
+                    </div>
+                  </div>
+                  <a href="javascript:;" class="shopCart">
+                    购物车
+                    <span class="counts">10</span>
+                  </a>
+                  <a href="javacript:;" class="notice">
+                    通知
+                    <span class="counts"></span>
+                  </a>
+  
+                </div>
+              </li>
+              <li class="designerIn float-l"><a href="#">设计师入驻</a></li>
+              <li class="downloadApp float-l">
+                <a href="#">下载App<span class="iconfont icon-unfold"></span></a>
+                <div class="dBarCode">
+                  <img src="./img/FrPIlipUd8Wgy0WwQ81zE3L-_gim" alt="" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- shopNavbar下部导航框 ( 左侧 shopNav 导航 以及 右侧 searchBar 搜索部分 )-->
+      <div class="shopNavbar">
+        <div class="wrap clearfix">
+          <!-- shopNav左侧商店菜单导航 -->
+          <ul class="shopNav">
+            <li class="active"><a href="#">首页</a></li>
+            <li><a href="#">逛</a></li>
+            <li><a href="#">设计师</a></li>
+            <li><a href="#">小站</a></li>
+          </ul>
+          <!-- searchBar 右侧搜索框 -->
+          <div class="searchBar">
+            <input type="text" class="searchItem" placeholder="搜索您感兴趣的品牌" />
+            <button type="submit" class="searchBtn">
+              <span class="iconfont icon-search"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  <!-- /#mHeader头部通用版块 -->
+
+  <!-- #shopcarContent -->
+  <div id="shopcarContent">
+    <!-- 1F -->
+    <!-- logo部分 -->
+    <div class="scFloor1 scLogo wrap clearfix">
+      <h2>
+        <i class="iconfont icon-publishgoods_fill"></i> <span> 购物车</span>
+      </h2>
+    </div>
+
+    <!-- 2F -->
+    <!-- 购物车具体内容 -->
+    <div class="scFloor2 scCart wrap clearfix">
+      <!-- 顶部全选操作 -->
+      <div class="cartOperation">
+        <ul>
+          <li>
+            <a href="#" class="selectBox"><i></i></a>全选
+          </li>
+          <li>商品信息</li>
+          <li>数量</li>
+          <li>金额(元)</li>
+          <li>操作</li>
+        </ul>
+      </div>
+
+      <!-- 商品部分 -->
+      <div class="cartGood">
+        <div class="cartShop">
+          <!-- 商品来自不同店铺 -->
+          <ul>
+            <!-- 同一店铺下的商品列表 -->
+            <li>
+              <div class="cartShopHead">
+                <a href="#" class="selectBox"><i></i></a><span>分享人:米开朗的小店</span>
+              </div>
+              <!-- 商品1的图片,价格,数量,操作等 -->
+              <ul class="cartMsg clearfix">
+                <li>
+                  <a href="#" class="selectBox"><i></i></a>
+                  <a href="#" class="cgPic"><img src="./img/cartGood1_1.jpg" alt="" /></a>
+                </li>
+                <li class="cgIntr">
+                  <div>
+                    <a href="javascript:;">maxma美加净大白兔联名款润唇膏经典国潮保湿滋润补水防干裂</a>
+                  </div>
+                  <div><span>重量:3g</span></div>
+                </li>
+                <li class="cgNum clearfix">
+                  <div><a href="javascript:;">-</a></div>
+                  <div><input type="text" value="1" /></div>
+                  <div><a href="javascript:;">+</a></div>
+                </li>
+                <li class="cgPrice">66.00</li>
+                <li class="cgOpera"><a href="javascript:;">删除</a></li>
+              </ul>
+              <!-- 商品2的图片,价格,数量,操作等 -->
+              <ul class="cartMsg clearfix">
+                <li>
+                  <a href="#" class="selectBox"><i></i></a>
+                  <a href="#" class="cgPic"><img src="./img/cartGood1_1.jpg" alt="" /></a>
+                </li>
+                <li class="cgIntr">
+                  <div>
+                    <a href="javascript:;">maxma美加净大白兔联名款润唇膏经典国潮保湿滋润补水防干裂</a>
+                  </div>
+                  <div><span>重量:3g</span></div>
+                </li>
+                <li class="cgNum clearfix">
+                  <div><a href="javascript:;">-</a></div>
+                  <div><input type="text" value="1" /></div>
+                  <div><a href="javascript:;">+</a></div>
+                </li>
+                <li class="cgPrice">66.00</li>
+                <li class="cgOpera"><a href="javascript:;">删除</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 底部全选和价格统计 -->
+      <div class="cartPrice">
+        <ul>
+          <li>
+            <a href="#" class="selectBox"><i></i></a>全选
+            <a href="#">删除</a>
+          </li>
+          <li>已选商品<span class="sltCount">1</span>件</li>
+          <li>合计(不含运费): <span>￥35.00</span> </li>
+        </ul>
+        <img src="./img/user_nav_line.png" alt="">
+      </div>
+    </div>
+
+
+    <!-- 按钮 -->
+    <div class="scFloor3 scBtn wrap clearfix">
+      <button type="button">
+        购物车结算
+      </button>
+    </div>
+
+  </div>
+  <!-- /#shopcarContent -->
+
+  <!-- #mFooter底部通用版块 -->
+  <footer id="mFooter">
+    <div class="wrap clearfix">
+      <!-- 1.say&author名人名言 -->
+      <div class="sayAuthor">
+        <!-- 1.1.say -->
+        <p class="say">
+          “决定设计哪个产品跟决定如何度过人生一样，最关键是看你的见解。”
+        </p>
+        <!-- 1.2.author -->
+        <p class="author">by <span> 米谷久美</span></p>
+      </div>
+
+      <!-- 2.copyright 版权声明,社区跳转 -->
+      <div class="copyright clearfix">
+        <!-- link左侧网站链接 -->
+        <div class="link">
+          <a href="#"><span class="sina"></span>新浪微博</a>
+          <a href="#"><span class="douban"></span>豆瓣小站</a>
+          <a href="#"><span class="renren"></span>人人小站</a>
+        </div>
+        <!-- copyWord中间版权声明 -->
+        <div class="copyWord">
+          <p>Copyright 2017 版权所有 xiangqu.com 浙ICP备12027496</p>
+        </div>
+
+        <!-- goShopLink -->
+        <div class="goShopLink">
+          <a href="#">热门精选</a> <a href="#">热门分类</a>
+        </div>
+      </div>
+
+      <!-- 3.friendLink 友情链接合作伙伴 -->
+      <div class="friendLink clearfix">
+        <ul class="aboutUs clearfix">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">用户帮助</a></li>
+          <li><a href="#">商务合作</a></li>
+        </ul>
+        <ul class="theLink">
+          <li>友情链接:</li>
+          <li><a href="#">想去网</a></li>
+          <li><a href="#">手机想去</a></li>
+          <li><a href="#">爱图购</a></li>
+          <li><a href="#">更多...</a></li>
+        </ul>
+      </div>
+
+      <!-- 4.工商编号和安全联盟 -->
+      <div class="versionNum clearfix">
+        <div class="verNum">
+          <a href="#">
+            <img src="./img/FinEALw7ifYIV2baxOAzDe1ctz1S" alt="" />
+            <span>浙公网安备 33010602001965号</span>
+          </a>
+        </div>
+        <div class="unionPic">
+          <a href="#"> <img src="./img/sm_83x30.png" alt="" /> </a>
+        </div>
+      </div>
+
+      <!-- 5.wantJoin入驻链接 -->
+      <div class="wantJoin float-r clearfix">
+        <a href="#"><img src="./img/xq_bottom_img.png" alt="" /></a>
+      </div>
+    </div>
+  </footer>
+  <!-- /#mFooter底部通用版块 -->
+
+  <!-- #theFixed固定跟随通用版块 -->
+  <!-- #slideNav 固定跟随的导航框(App下载二维码+商家入驻入口) -->
+  <div id="slideNav">
+    <div class="slideLogo clearfix"><a href="#"></a></div>
+    <p>想去App下载</p>
+    <div class="barCode"></div>
+  </div>
+  <!-- /#slideNav -->
+  <!-- .feedBack 固定位置的返回顶部按钮 -->
+  <div class="feedBack">
+    <div class="feedBackBtn"><a href="#"></a></div>
+    <a href="#" class="advice"></a>
+  </div>
+  <!-- /.feedBack -->
+</body>
+
+</html>

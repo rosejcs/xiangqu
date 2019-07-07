@@ -1,0 +1,630 @@
+#goodPageContent {
+  background-color: #f9f9f9;
+
+  /* 1F */
+  // 点击具体某个商品的具体信息.thisGoodMsg
+  .gFloor1 {
+    background-color: #fff;
+    margin-top: 1rem;
+
+    .gBrand {
+      padding: 2rem 2rem;
+      border-bottom: 1px solid #ccc;
+
+      a {
+        float: left;
+
+        &.brandPic {
+          width: 50px;
+          height: 50px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        &.brandName {
+          font-size: 18px;
+          height: 50px;
+          line-height: 50px;
+          padding-left: 1rem;
+        }
+
+        &.brandIntr {
+          font-size: 12px;
+          color: #666;
+          height: 14px;
+          line-height: 14px;
+          padding-top: 0.25rem;
+        }
+      }
+    }
+
+    .goodInfo {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+
+      .goodInfoPic {
+        flex: 14;
+        // 作为喜欢图标.likeCount的父定位
+        position: relative;
+
+        div {
+          width: 100%;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        a.likeCount {
+          position: absolute;
+          top: 5%;
+          right: 5%;
+          width: 80px;
+          height: 30px;
+          background-color: rgba(255, 255, 255, 0.5);
+          border-radius: 15px;
+          line-height: 30px;
+          font-size: 16px;
+          display: flex;
+
+          i {
+            flex: 1;
+            font-size: 1.75rem;
+            text-align: center;
+          }
+
+          span {
+            flex: 1;
+          }
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+          }
+        }
+      }
+
+      .goodInfoWord {
+        flex: 10;
+        padding-left: 2rem;
+
+        .goodInfoIntr {
+          float: left;
+
+          h3.goodName {
+            font-weight: 500;
+            font-size: 18px;
+            min-width: 252px;
+            height: 42px;
+            line-height: 42px;
+          }
+
+          p {
+            font-size: 16px;
+            height: 30px;
+            line-height: 30px;
+
+            span {
+              padding-left: 2rem;
+            }
+          }
+
+          p:nth-child(3) {
+            span {
+              padding-left: 45px;
+            }
+          }
+        }
+
+        .goodBuy {
+          padding-top: 0.75rem;
+          float: left;
+
+          p {
+            font-size: 16px;
+            height: 30px;
+            line-height: 30px;
+          }
+
+          ul.buyCount {
+            float: left;
+
+            li {
+              float: left;
+              width: 30px;
+              height: 30px;
+              text-align: center;
+              line-height: 26px;
+              cursor: pointer;
+              font-weight: 600;
+              font-size: 24px;
+              border: 1px solid #111;
+
+              &.count {
+                width: 50px;
+                border-left: none;
+                border-right: none;
+                // border-left: 1px solid #999;
+                // border-right: 1px solid #999;
+                overflow: hidden;
+                font-size: 1rem;
+
+                input {
+                  width: 100%;
+                  height: 100%;
+                  text-align: center;
+                  outline: none;
+                  border: none;
+                  font-weight: 600;
+                  font-size: 1.25rem;
+                }
+              }
+
+              &.goodStock {
+                float: left;
+                color: #666;
+                font-size: 0.75rem;
+                width: 60px;
+                height: 30px;
+                line-height: 30px;
+                padding-left: 1rem;
+                cursor: normal;
+                border: none;
+                font-weight: 500;
+
+                i.stockCount {}
+              }
+            }
+          }
+        }
+
+        .price {
+          float: left;
+          width: 100%;
+          padding-top: 1.75rem;
+
+          p {
+            float: left;
+          }
+
+          p:nth-child(1) {
+            width: 100%;
+            font-weight: 600;
+            font-size: 1.25rem;
+            padding-bottom: 0.75rem;
+          }
+
+          p:nth-child(3) {
+            padding-left: 3.25rem;
+          }
+        }
+
+        .buyBtn {
+          float: left;
+          width: 100%;
+          padding-top: 0.5rem;
+
+          a {
+            float: left;
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 18px;
+            border: 2px solid #000;
+            background-color: #000;
+            color: #fff;
+            margin-right: 1rem;
+            margin-top: 1rem;
+
+            &:nth-child(2) {
+              background-color: #fefefe;
+              color: #111;
+              margin-right: 0;
+            }
+          }
+        }
+
+        .promiss {
+          float: left;
+          padding-top: 1.2rem;
+
+          span {
+            font-size: 1rem;
+            float: left;
+            line-height: 24px;
+            color: #666;
+
+            i {
+              float: left;
+              width: 24px;
+              height: 24px;
+              line-height: 24px;
+              text-align: center;
+              border: 1px solid #ccc;
+              border-radius: 50%;
+              margin-right: 0.5rem;
+            }
+
+            &:nth-child(1) {
+              padding-right: 1.25rem;
+            }
+          }
+        }
+
+        .wechat {
+          float: left;
+          width: 320px;
+          margin-top: 1rem;
+          border: 1px solid #ccc;
+          background-color: #eee;
+
+          span {
+            float: left;
+            width: 70px;
+            height: 70px;
+            margin-right: 0.75rem;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          p {}
+        }
+      }
+    }
+  }
+
+  /* 2F */
+  // 同类推荐gFloor2
+  .gFloor2 {
+    padding-top: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    // border: 1px solid #ccc;
+    background-color: #fff;
+
+    h3.title {
+      width: 70px;
+      height: 33px;
+      line-height: 33px;
+      font-weight: 400;
+      margin-left: 1rem;
+      border-bottom: 2px solid #666;
+    }
+
+    .gSameBox {
+      margin: 1rem 0.2rem;
+      overflow: hidden;
+
+      ul {
+        // width: 100%;
+        height: 136px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        animation: gun 50s linear infinite;
+
+        li {
+          padding: 0 0.5rem;
+
+          a {
+            float: left;
+            width: 136px;
+            height: 136px;
+
+            img {
+              width: 100%;
+            }
+
+            transition: transform 0.6s linear;
+
+            &:hover {
+              transform: scale(1.15);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* 3F */
+  /* 商品描述和评论 */
+  .gFloor3 {
+    .pageBox {
+      // padding: 1rem;
+      border-bottom: 2px solid #aaa;
+
+      div {
+        float: left;
+        padding-left: 1rem;
+
+        h3 {
+          height: 50px;
+          line-height: 50px;
+
+          a {
+            font-weight: 400;
+          }
+
+          &:hover {
+            border-bottom: 2px solid #000;
+            box-sizing: border-box;
+          }
+        }
+
+        &.active {
+          h3 {
+            border-bottom: 2px solid #000;
+            box-sizing: border-box;
+          }
+        }
+      }
+
+      .gIntroduct {}
+
+      .buyerSay {}
+    }
+
+    .pageShow {
+      width: 100%;
+      background: url("../img/detail_text.png") no-repeat right top;
+      // background: url("../img/detail_text.png") no-repeat -100px 100px;
+
+      .wrap {
+        width: 80%;
+        min-width: 368px;
+
+        .classifies {
+          padding: 3rem 0;
+
+          ul {
+            float: left;
+
+            li {
+              float: left;
+              margin-right: 1rem;
+
+              a {
+                float: left;
+                padding: 0.2rem 0.5rem;
+                background-color: #ccc;
+                border-radius: 20px;
+
+                &:hover {
+                  background-color: #111;
+                  color: #efefef;
+                }
+              }
+            }
+          }
+        }
+
+        ul.goodImg {
+          width: 100%;
+
+          li {
+            width: 100%;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+
+      a {
+        img {
+          width: 100%;
+          max-width: 770px;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+
+  /* 4F */
+  /* 喜欢此商品的人 */
+  .gFloor4 {
+    margin-top: 1rem;
+
+    .title {
+      padding-left: 1rem;
+
+      h3 {
+        float: left;
+        height: 50px;
+        line-height: 50px;
+        font-weight: 400;
+        border-bottom: 2px solid #000;
+        box-sizing: border-box;
+      }
+    }
+
+    .gliker {
+      margin: 1rem 1rem;
+      overflow: hidden;
+
+      ul {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 60px;
+
+        li {
+          width: 60px;
+          height: 60px;
+          padding-right: 1rem;
+
+          a {
+            float: left;
+            width: 60px;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 写一个通用动画 */
+@keyframes gun {
+  0% {}
+
+  100% {
+    transform: translateX(-750px);
+  }
+}
+
+/* 媒体查询部分 */
+
+@media screen and (max-width: 749px) {
+
+  // @media screen and (max-width:903px) {
+  #goodPageContent {
+    .gFloor1 {
+      .goodInfo {
+        .goodInfoPic {
+          // media修改部分
+          flex: none;
+          width: 100%;
+        }
+
+        .goodInfoWord {
+          flex: none;
+          width: 100%;
+          // padding: 0;
+
+          .goodInfoIntr {
+            width: 300px;
+            float: left;
+            padding-bottom: 1rem;
+          }
+
+          .goodBuy {
+            width: 300px;
+            float: right;
+          }
+
+          .price {
+            float: right;
+            width: 300px;
+          }
+
+          .buyBtn {
+            float: left;
+            width: 300px;
+          }
+
+          .promiss {
+            float: right;
+            width: 300px;
+            // padding-top: 2.25rem;
+          }
+
+          .wechat {
+            float: left;
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 686px) {
+  #goodPageContent {
+    .gFloor1 {
+      .goodInfo {
+        .goodInfoPic {
+          // media修改部分
+          flex: none;
+          width: 100%;
+        }
+
+        .goodInfoWord {
+          flex: none;
+          width: 100%;
+          // max-width: 657px;
+          padding: 0;
+          padding-left: 2.25rem;
+
+          .goodInfoIntr {
+            width: 300px;
+            float: left;
+          }
+
+          .goodBuy {
+            width: 300px;
+            float: left;
+          }
+
+          .price {
+            float: left;
+            width: 300px;
+          }
+
+          .buyBtn {
+            float: left;
+            width: 300px;
+          }
+
+          .promiss {
+            float: left;
+            width: 300px;
+          }
+
+          .wechat {
+            float: left;
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #goodPageContent {
+
+    /* 1F */
+    // 点击具体某个商品的具体信息.thisGoodMsg
+    .gFloor1 {
+      .gBrand {
+        a {
+          &.brandPic {
+            img {}
+          }
+
+          &.brandName {}
+
+          &.brandIntr {}
+        }
+      }
+
+      .goodInfo {
+        .goodInfoPic {
+          flex: none;
+          width: 100%;
+
+          div {
+            img {}
+          }
+        }
+
+        .goodInfoIntr {
+          flex: none;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

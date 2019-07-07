@@ -1,0 +1,748 @@
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Microsoft Yahei", Arial, "operator mono", SimSun;
+  font-size: 14px;
+  color: #000;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+i {
+  font-style: normal;
+}
+
+.wrap {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  height: 0px;
+  line-height: 0px;
+  clear: both;
+}
+
+.float-l {
+  float: left;
+}
+
+.float-r {
+  float: right;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+/* 自定义的颜色值 m_color */
+$m_black : #3c3c3c;
+$m_white : #f0f0f0;
+$m_red : #f66;
+$m_green: #6f6;
+$m_blue : #66f;
+$m_dgreen : #6a6;
+$m_yellow : #ee6;
+
+
+
+.wrap {
+  width: 90%;
+  max-width: 980px;
+  min-width: 370px;
+  margin: 0 auto;
+  border: 1px solid goldenrod;
+  // background-color: rgb(50, 80, 85);
+  box-sizing: border-box;
+}
+
+/* 
+* 多网页重用样式start
+*/
+/* #mHeader头部通用版块 */
+#mHeader {
+  background-color: #fefefe;
+
+  .topNavbar {
+    width: 100%;
+    background-color: #010101;
+
+    .leftLogo {
+      float: left;
+      width: 40%;
+      min-width: 329px;
+      height: 45px;
+
+      a.leftLogoLink {
+        float: left;
+        height: 45px;
+        padding: 7px 0;
+        box-sizing: border-box;
+
+        img {}
+      }
+    }
+
+    .rightUser {
+      float: right;
+      width: 55%;
+      min-width: 300px;
+      height: 45px;
+      position: relative;
+
+      ul.loginAndReg {
+        float: right;
+        li {
+          float: left;
+          height: 45px;
+          width: 82px;
+          text-align: center;
+          a {
+            line-height: 45px;
+            color: #fff;
+            text-align: center;
+            font-size: 0.9rem;
+          }
+
+          +li {
+            margin-left: 0.75rem;
+          }
+        }
+
+        li.loginReg {
+          width: auto;
+          .unlog{
+            float: left;
+            a.login {
+              margin-right: 1rem;
+            }
+          }
+          .logged{
+            float: left;
+            margin:0 20px 0 20px;
+            position: relative;
+            >a{
+              margin-left:14px;
+            }
+            .userWrap{
+              float:left;
+              height: 45px;
+              >a.user{
+                float: left;
+                >span{
+                  float: left;
+                  width: 50px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space:nowrap;
+                }
+                >span:nth-child(2){
+                  margin-left: 4px;
+                  width: 12px;
+                  img{
+                    width: 100%;
+                  }
+                }
+              }
+              .uconfig{
+                position: absolute;
+                left: -10px;
+                top:43px;
+                height: 0px;
+                overflow: hidden;
+                border-radius: 0 0 12px 12px;
+                >p{
+                  float:left;
+                  height: 18px;
+                  background-color: #111;
+                  padding: 8px;
+                  a{
+                    line-height: 18px;
+                    text-align: center;
+                    font-size: 10px;
+                  }
+                }
+              }
+              &:hover .uconfig{
+                transition: all 0.5s linear;
+                // width:170px;
+                height: 35px;
+              }
+            }
+            
+            .shopCart,
+            .notice {
+              position: relative;
+              span.counts{
+                position:absolute;
+                top:-12px;
+                right: -6px;
+                width:24px;
+                height: 12px;
+                border-radius: 6px;
+                background-color: rgba(255,125,125,0.6);
+                font-size: 10px;
+                color:#ccc;
+                line-height: 12px;
+                text-align:center;
+              }
+            }
+            .notice{
+              span.counts{
+                right: -12px;
+                width:10px;
+                height: 10px;
+              }
+            }
+            
+          }
+        }
+
+        li.designerIn {
+          a {
+            color: #f6d036;
+          }
+        }
+
+        li.downloadApp {
+          position: relative;
+
+          a {
+            position: relative;
+
+            span {
+              position: absolute;
+              top: -12px;
+              right: -17px;
+              width: 16px;
+              height: 16px;
+              color: #fff;
+            }
+          }
+
+          div.dBarCode {
+            display: none;
+            float: left;
+            width: 118px;
+            height: 118px;
+            margin-top: 2px;
+            border: 1px solid #000;
+
+            img {
+              width: 100%;
+              background-size: cover;
+            }
+          }
+
+          &:hover div.dBarCode {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .shopNavbar {
+    .wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap-reverse;
+    }
+
+    // height: 60px;
+    background-color: #fff;
+
+    ul.shopNav {
+      float: left;
+      width: 50%;
+      height: 50px;
+      border-bottom: 3px solid #f1f1f1;
+      box-sizing: border-box;
+      margin-bottom: 2px;
+
+      li {
+        float: left;
+        width: 25%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        box-sizing: border-box;
+
+        &.active {
+          border-bottom: 3px solid #666;
+        }
+
+        a {
+          display: inline-block;
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+
+        &:hover {
+          border-bottom: 3px solid #ccc;
+        }
+
+        +li {
+          position: relative;
+        }
+      }
+    }
+
+    .searchBar {
+      // float: right;
+      border: 1px solid #aaa;
+      margin: 12px 0px;
+
+      input.searchItem {
+        float: left;
+        width: 264px;
+        height: 30px;
+        line-height: 30px;
+        border: none;
+        padding-left: 1.25rem;
+        font-size: 1rem;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button.searchBtn {
+        float: left;
+        width: 43px;
+        height: 30px;
+        border: none;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        &:focus {
+          outline: none;
+        }
+
+        span {
+          color: #fff;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+/* #mFooter底部通用版块 */
+#mFooter {
+  background-color: #000;
+  color: #fff;
+  color: #888;
+
+  .wrap {
+    position: relative;
+
+    a {
+      color: #888;
+    }
+
+    .sayAuthor {
+      /* 名人名言 */
+      width: 60%;
+      height: 90px;
+      color: #fff;
+      padding-top: 1.2rem;
+      // margin: 0px 285px 35px 0px;
+
+      a {
+        color: #fff;
+      }
+
+      p.say {
+        font-size: 1.25rem;
+      }
+
+      p.author {
+        padding-top: 25px;
+        text-align: right;
+        font-size: 14px;
+      }
+    }
+
+    .copyright {
+      /* 盗版声明 */
+      width: 90%;
+      padding-bottom: 6px;
+
+      div {
+        float: left;
+        height: 25px;
+        line-height: 25px;
+      }
+
+      .link {
+        a {
+          float: left;
+          height: 25px;
+          line-height: 25px;
+          margin-right: 1rem;
+
+          span {
+            float: left;
+            width: 25px;
+            height: 25px;
+            background: url("../img/ico_common.png") no-repeat 0px -159px;
+            background-size: 325%;
+          }
+        }
+
+        a:nth-of-type(2) span {
+          background-position: 0px -186px;
+        }
+
+        a:nth-of-type(3) span {
+          background-position: -32px -186px;
+        }
+      }
+
+      .goShopLink {
+        a {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+
+    .friendLink {
+      /* 友情链接 */
+      padding: 6px 0;
+      border-top: 1px solid #666;
+      margin-right: 240px;
+
+      ul {
+        float: left;
+
+        li {
+          float: left;
+          margin-left: 8px;
+          margin-right: 24px;
+        }
+      }
+    }
+
+    .versionNum {
+      /* 版本号 */
+      width: 80%;
+
+      .verNum {
+        text-align: center;
+
+        a,
+        img,
+        span {
+          display: inline-block;
+        }
+
+        a {
+          img {
+            height: 15px;
+            vertical-align: middle;
+            margin-top: -3px;
+          }
+
+          span {
+            height: 18px;
+            line-height: 18px;
+          }
+        }
+      }
+
+      .unionPic {
+        text-align: center;
+        padding-bottom: 14px;
+      }
+    }
+
+    .wantJoin {
+      /* 5.加盟链接logo */
+      float: right;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 160px;
+
+      a {
+        float: left;
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* #slideNav固定跟随的导航框 */
+/* #slideNav 固定跟随的导航框(App下载二维码+商家入驻入口) */
+#slideNav {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  width: 120px;
+  height: 238px;
+  background-color: #111;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: -23px;
+    right: 0px;
+    background: #fff url("../img/ico_common.png") no-repeat -204px -462px;
+    cursor: pointer;
+  }
+
+  .slideLogo {
+    width: 120px;
+    height: 86px;
+    background-image: url("../img/ruzhu_bottom.png");
+
+    a {
+      float: left;
+      width: 108px;
+      height: 26px;
+      margin: 49px 0px 0px 6px;
+    }
+  }
+
+  p {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .barCode {
+    width: 110px;
+    height: 110px;
+    background: url("../img/qr.png") no-repeat;
+    margin: 5px 5px;
+  }
+}
+
+/* .feedBack固定跟随的返回顶部 */
+.feedBack {
+  position: fixed;
+  bottom: 280px;
+  // left: 50%;
+  // margin-left: 546px;
+  left: 90%;
+
+  .feedBackBtn {
+    /* 默认hidden,滚动一定距离block */
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+
+    a {
+      display: inline-block;
+      width: 28px;
+      height: 117px;
+      background-image: url("../img/gotop.gif");
+      background-position: left bottom;
+
+      &:hover {
+        background-image: url("../img/gotop_hover.gif");
+      }
+    }
+  }
+
+  a.advice {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background-image: url("../img/advice.png");
+    background-position: -12px -11px;
+
+    &:hover {
+      background-image: url("../img/advice-hover.png");
+    }
+  }
+}
+
+
+@media screen and (max-width: 743px) {
+
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  /* #mHeader头部通用版块 */
+  #mHeader {
+    .topNavbar {
+      .rightUser {
+        float: left;
+        width: 100%;
+      }
+    }
+
+    .shopNavbar {
+      ul.shopNav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        li {
+          a {
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .searchBar {
+        display: block;
+        width: 80%;
+        height: 46px;
+        // margin: 0.5rem auto 0;
+        margin: 0.25rem auto 0;
+        border: 1px solid #aaa;
+        display: flex;
+        border-radius: 1.25rem;
+        overflow: hidden;
+
+        input.searchItem {
+          flex: 3;
+          height: 100%;
+          font-size: 1.1rem;
+        }
+
+        button.searchBtn {
+          flex: 1;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  /* #mFooter脚部通用版块 */
+  #mFooter {
+    .wrap {
+      .sayAuthor {
+        width: 100%;
+        padding-top: 1.2rem;
+
+        p.say {
+          font-size: 1.1rem;
+        }
+
+        p.author {
+          padding-top: 0.5rem;
+          font-size: 0.8rem;
+          padding-right: 0.5rem;
+        }
+      }
+
+      .copyright {
+        /* 盗版声明 */
+        width: 100%;
+        padding-bottom: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .friendLink {
+        /* 友情链接 */
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ul {
+          li {
+            margin-left: 4px;
+            margin-right: 14px;
+          }
+        }
+      }
+
+      .versionNum {
+        /* 版本号 */
+        width: 100%;
+      }
+
+      .wantJoin {
+        /* 5.加盟链接logo */
+        display: none;
+      }
+    }
+  }
+
+  /* #slideNav固定跟随的导航框 */
+  /* #slideNav 固定跟随的导航框(App下载二维码+商家入驻入口) */
+  #slideNav {
+    display: none;
+  }
+
+  .feedBack {
+    position: fixed;
+    bottom: 180px;
+    // left: 50%;
+    // margin-left: 546px;
+    left: 84%;
+
+    .feedBackBtn {
+
+      /* 默认hidden,滚动一定距离block */
+      a {
+        &:hover {}
+      }
+    }
+
+    a.advice {
+      &:hover {}
+    }
+  }
+}
+
+// 多网页重用样式end

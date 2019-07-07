@@ -1,0 +1,193 @@
+.rmgwrap {
+  width: 180px;
+  margin: 0 auto; }
+
+#rmContent > .rmClassify > .hdBg {
+  width: 100%;
+  height: 4px;
+  margin-top: 2rem;
+  background-image: linear-gradient(to right, #000, #333); }
+  #rmContent > .rmClassify > .hdBg > span {
+    float: left;
+    width: 69px;
+    height: 4px;
+    margin-left: 2.25rem;
+    background: url("../img/design_bar.png") no-repeat; }
+    #rmContent > .rmClassify > .hdBg > span > span {
+      float: left;
+      font-size: 1.1rem;
+      margin-top: -0.6rem;
+      margin-left: 1rem; }
+
+#rmContent > .rmClassify .theClassify {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  #rmContent > .rmClassify .theClassify .theBox {
+    margin-top: 1rem;
+    padding: 3.5rem 0 0 2rem;
+    width: 237px;
+    height: 140px;
+    border: 1px solid #999;
+    box-sizing: border-box; }
+    #rmContent > .rmClassify .theClassify .theBox .boxHead {
+      float: left;
+      padding-right: 1rem;
+      border-right: 1px solid #333; }
+      #rmContent > .rmClassify .theClassify .theBox .boxHead a {
+        font-size: 1.1rem; }
+        #rmContent > .rmClassify .theClassify .theBox .boxHead a span {
+          float: right; }
+    #rmContent > .rmClassify .theClassify .theBox .boxContent {
+      float: left; }
+      #rmContent > .rmClassify .theClassify .theBox .boxContent ul {
+        max-width: 137px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0.5rem;
+        margin-top: -0.15rem; }
+        #rmContent > .rmClassify .theClassify .theBox .boxContent ul li {
+          height: 23px;
+          margin: 0 2px; }
+          #rmContent > .rmClassify .theClassify .theBox .boxContent ul li a {
+            font-size: 12px;
+            color: #555;
+            padding: 0px 4px;
+            border-radius: 20px; }
+            #rmContent > .rmClassify .theClassify .theBox .boxContent ul li a:hover {
+              border: 1px solid #e0bca5; }
+
+#rmContent > .rmGoods {
+  margin-top: 3rem; }
+  #rmContent > .rmGoods .rmgTitle {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 20px; }
+    #rmContent > .rmGoods .rmgTitle > h2 {
+      border: 5px solid #000;
+      border-top: none;
+      border-bottom: none;
+      padding: 0 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 400; }
+    #rmContent > .rmGoods .rmgTitle > a {
+      margin-left: 1rem;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      background-color: #e6e6e6;
+      color: #666; }
+      #rmContent > .rmGoods .rmgTitle > a:hover {
+        background-color: #aaa;
+        background-image: linear-gradient(to right, #666, #777, #888, #999, #aaa, #bbb, #ccc);
+        color: #efefef; }
+      #rmContent > .rmGoods .rmgTitle > a.active {
+        color: #efefef;
+        background-image: linear-gradient(to right, #000, #111, #222, #333, #444, #555); }
+    #rmContent > .rmGoods .rmgTitle > span {
+      flex: 1;
+      width: 100%;
+      height: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      background: url("../img/site_dotted.png"); }
+  #rmContent > .rmGoods .rmgShow {
+    margin-top: 2rem; }
+    #rmContent > .rmGoods .rmgShow > ul {
+      display: flex;
+      justify-content: space-between; }
+      #rmContent > .rmGoods .rmgShow > ul > li > ul {
+        width: 310px;
+        padding: 10px; }
+        #rmContent > .rmGoods .rmgShow > ul > li > ul:hover {
+          border: 1px solid #ccc;
+          box-sizing: border-box; }
+        #rmContent > .rmGoods .rmgShow > ul > li > ul li,
+        #rmContent > .rmGoods .rmgShow > ul > li > ul a,
+        #rmContent > .rmGoods .rmgShow > ul > li > ul span {
+          font-size: 0.8rem; }
+        #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(1).rmgPic img {
+          width: 290px; }
+        #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(2).rmgPriceAndLike > div:nth-child(1) {
+          width: 100%;
+          height: 1px;
+          background-color: #333;
+          margin-top: 1.2rem; }
+        #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(2).rmgPriceAndLike > div:nth-child(2) {
+          min-width: 125px;
+          max-width: 170px;
+          margin: 0 auto;
+          background-color: #fff;
+          z-index: 2;
+          position: relative;
+          top: -0.75rem; }
+          #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(2).rmgPriceAndLike > div:nth-child(2) span {
+            float: left; }
+          #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(2).rmgPriceAndLike > div:nth-child(2) span:nth-child(1) {
+            padding-right: 1rem; }
+          #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(2).rmgPriceAndLike > div:nth-child(2) span:nth-child(2) {
+            width: 15px;
+            height: 12px;
+            margin-top: 3px;
+            margin-right: 0.5rem;
+            background: url("../img/like.png") no-repeat; }
+            #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(2).rmgPriceAndLike > div:nth-child(2) span:nth-child(2):hover {
+              background-image: url("../img/like_h.png"); }
+            #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(2).rmgPriceAndLike > div:nth-child(2) span:nth-child(2).liked {
+              background-image: url("../img/liked.png"); }
+          #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(2).rmgPriceAndLike > div:nth-child(2) span:nth-child(3).likeCounts {
+            float: right;
+            height: 19px;
+            overflow: hidden; }
+            #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(2).rmgPriceAndLike > div:nth-child(2) span:nth-child(3).likeCounts::after {
+              content: "+1";
+              display: block; }
+        #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(3).rmgShop {
+          text-align: center;
+          padding: 1rem 0; }
+          #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(3).rmgShop > a {
+            display: inline-block;
+            width: 63px;
+            height: 16px;
+            border-radius: 12px;
+            padding: 1px 0.5rem;
+            overflow: hidden;
+            transition: width 0.5s linear; }
+            #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(3).rmgShop > a > span:nth-child(2) {
+              display: none;
+              width: 70px; }
+            #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(3).rmgShop > a:hover {
+              width: 140px;
+              background-color: #000;
+              color: #fff; }
+              #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(3).rmgShop > a:hover > span:nth-child(2) {
+                display: inline; }
+        #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(4).rmgParts {
+          text-align: center;
+          line-height: 16px;
+          padding-bottom: 1rem;
+          border-bottom: 1px dashed #aaa;
+          margin-bottom: 1.25rem; }
+          #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(4).rmgParts i {
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: #555;
+            margin: 0 1rem 0.2rem; }
+        #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(5).designer {
+          padding-bottom: 1rem;
+          border-bottom: 1px dashed #aaa;
+          margin-bottom: 1rem; }
+          #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(5).designer div {
+            display: inline-block; }
+            #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(5).designer div > a.dsPic {
+              float: left;
+              margin: 0.25rem; }
+            #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(5).designer div > p.dsIntr {
+              float: left;
+              width: 125px; }
+              #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(5).designer div > p.dsIntr > a {
+                display: block; }
+              #rmContent > .rmGoods .rmgShow > ul > li > ul > li:nth-child(5).designer div > p.dsIntr > a.productIntr {
+                color: #666; }

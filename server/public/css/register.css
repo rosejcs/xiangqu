@@ -1,0 +1,220 @@
+/*
+ * @Author: Jeecs 
+ * @Date: 2019-01-20 20:08:47 
+ * @Last Modified by: Jeecs
+ * @Last Modified time: 2019-03-10 12:13:27
+ */
+/* 公共样式部分 */
+/* html,
+body,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+} */
+body {
+  background: url("../img/brickwall.png") repeat center center/14%;
+}
+
+.container {
+  height: 100%;
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* #topBanner start 顶部通栏 */
+/* #topBanner */
+#topBanner {
+  width: 100%;
+  height: 98px;
+}
+
+#topBanner>.topBannerLeft {
+  width: 329px;
+  height: 98px;
+  line-height: 98px;
+  padding-left: 48px;
+  box-sizing: border-box;
+}
+
+#topBanner>.topBannerLeft>h1>a {
+  display: inline-block;
+  width: 229px;
+  height: 24px;
+  background: url("../img/login_logo.jpg") no-repeat center center/cover;
+}
+
+/* /#topBanner end*/
+
+/* #regContent */
+#regContent {
+  width: 100%;
+  height: 394px;
+  border: 1px solid lightgray;
+  background-color: #fefefe;
+}
+
+#regContent>.wrapper {
+  width: 350px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#regContent>.wrapper>h2 {
+  width: 100%;
+  height: 73px;
+  line-height: 73px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+}
+
+#regContent>.wrapper>.userOperate {
+  width: 100%;
+}
+
+#regContent>.wrapper>.userOperate>ul {
+  width: 100%;
+}
+
+#regContent>.wrapper>.userOperate>ul>li {
+  width: 100%;
+}
+
+#regContent>.wrapper>.userOperate>ul>li>.inputTel {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 10px;
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid #c0c0c0;
+  position: relative;
+}
+
+#regContent>.wrapper>.userOperate>ul>li>.inputTel>.manIcon {
+  float: left;
+  width: 46px;
+  height: 46px;
+  background: url("../img/login.png") no-repeat center center;
+}
+
+#regContent>.wrapper>.userOperate>ul>li>.inputTel>input.phone {
+  float: left;
+  width: 300px;
+  height: 46px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+#regContent>.wrapper>.userOperate>ul>li>.inputTel>span.phoneTrue,
+#regContent>.wrapper>.userOperate>ul>li>.inputTel>span.phoneFalse{
+  position: absolute;
+  right:-32px;
+  top:14px;
+  height: 20px;
+  line-height: 20px;
+  display: none;
+}
+#regContent>.wrapper>.userOperate>ul>li>.inputTel>span.phoneFalse{
+  right:-160px;
+}
+#regContent>.wrapper>.userOperate>ul>li>.inputTel>span.phoneTrue img,
+#regContent>.wrapper>.userOperate>ul>li>.inputTel>span.phoneFalse img{
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+#regContent>.wrapper>.userOperate>ul>li:nth-child(2) {
+  height: 74px;
+}
+#regContent>.wrapper>.userOperate>ul>li>.inputPwd {
+  width: 350px;
+  height: 48px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  position: relative;
+}
+
+#regContent>.wrapper>.userOperate>ul>li>.inputPwd>.pwdIcon {
+  float: left;
+  width: 46px;
+  height: 46px;
+  background: url("../img/login.png") no-repeat center center;
+}
+
+#regContent>.wrapper>.userOperate>ul>li>.inputPwd>input.upwd {
+  float: left;
+  width: 300px;
+  height: 46px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+#regContent>.wrapper>.userOperate>ul>li>.inputPwd>span.pwdTrue,
+#regContent>.wrapper>.userOperate>ul>li>.inputPwd>span.pwdFalse{
+  position: absolute;
+  right:-32px;
+  top:14px;
+  height: 20px;
+  line-height: 20px;
+  display: none;
+}
+#regContent>.wrapper>.userOperate>ul>li>.inputPwd>span.pwdFalse{
+  right:-175px;
+}
+#regContent>.wrapper>.userOperate>ul>li>.inputPwd>span.pwdTrue img,
+#regContent>.wrapper>.userOperate>ul>li>.inputPwd>span.pwdFalse img{
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+#regContent>.wrapper>.userOperate>ul>li>span.wordLength {
+  display: inline-block;
+  color: #ccc;
+  padding-top: 6px;
+}
+
+
+#regContent>.wrapper>.userOperate>ul>li:nth-child(3)>p.noticeTip {
+  width: 350px;
+  height: 20px;
+}
+
+#regContent>.wrapper>.userOperate>ul>li:nth-child(3)>input.reg {
+  width: 350px;
+  height: 48px;
+  font-size: 16px;
+  color: #eee;
+  background-color: rgba(0,0,0,0.8);
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  cursor: pointer
+}
+#regContent>.wrapper>.userOperate>ul>li:nth-child(3)>input.reg:active {
+  color: #efefef;
+  box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.2);
+}
+
+#regContent>.wrapper>.userOperate>ul>li:nth-child(3)>div.needToKnow {}
+
+#regContent>.wrapper>.userOperate>ul>li:nth-child(3)>div.needToKnow>p{
+  width: 350px;
+  height: 56px;
+  color: #888;
+  padding-top: 6px;
+  font-size: 14px;
+}
+
+#regContent>.wrapper>.userOperate>ul>li:nth-child(4)>div.turnToLogin>a{
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 154px;
+}
+
+
+/* /#regContent */
